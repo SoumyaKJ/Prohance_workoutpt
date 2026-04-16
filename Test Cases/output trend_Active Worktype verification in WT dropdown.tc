@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>output trend_Active Worktype verification in WT dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7712d1b9-ed03-4bcf-b0a7-8281c9d3a23d</testCaseGuid>
+</TestCaseEntity>

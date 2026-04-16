@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>heat chart_Active Worktype verification in WT dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3020ba4c-49e0-436a-a5dd-64cf2b96c681</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>collecting work type and category in worktype screen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1da4732e-e31b-4d07-8c76-1155c119333c</testCaseGuid>
+</TestCaseEntity>
