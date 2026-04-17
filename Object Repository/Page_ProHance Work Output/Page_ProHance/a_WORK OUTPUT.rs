@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_WORK OUTPUT</name>
+   <tag></tag>
+   <elementGuidId>6d06edb8-4cd7-4a37-bc53-b6277f3418ed</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='workOutIPAD']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#workOutIPAD</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;WORK OUTPUT&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>14e1fc6d-2a57-44ea-96b0-1f2c977434f3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dropdown-toggle padding-Left-10px cursor-pointer</value>
+      <webElementGuid>d3101228-7923-4766-9011-34855bc278c9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>workOutIPAD</value>
+      <webElementGuid>ba067a42-3913-4b6a-894e-0441bf33c16a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-toggle</name>
+      <type>Main</type>
+      <value>dropdown</value>
+      <webElementGuid>04b93e7c-17d0-4d57-b504-68e7563857dc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+											WORK OUTPUT
+										</value>
+      <webElementGuid>7b4e42b4-e4ab-4124-8ef7-236a9a6f5737</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;workOutIPAD&quot;)</value>
+      <webElementGuid>b80fc1de-be34-4ad4-a9dd-cf8814910765</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//a[@id='workOutIPAD']</value>
+      <webElementGuid>0be2effe-e3e4-474b-a9f8-7e2b7776f675</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='leftMenus']/li[2]/a</value>
+      <webElementGuid>950964a4-534f-4c03-ac88-c632c83a07d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'WORK OUTPUT')]</value>
+      <webElementGuid>10908d4a-1047-46ca-aaf3-15a4b6f5aefd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CUSTOM REPORTS'])[1]/following::a[1]</value>
+      <webElementGuid>4705a198-d374-4aec-8aac-89395d5a3bb3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TIMESHEET'])[1]/following::a[2]</value>
+      <webElementGuid>fa9007de-4732-4305-aa83-e6a15eac682d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ASSET OPTIMIZATION'])[1]/preceding::a[1]</value>
+      <webElementGuid>58e5b97a-c17b-4e95-a972-acb14df14f02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PROJECTS'])[1]/preceding::a[2]</value>
+      <webElementGuid>0490ebb7-ad55-45e2-a121-edc9b1daaf8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='WORK OUTPUT']/parent::*</value>
+      <webElementGuid>8e2b122c-aba3-490d-89e6-ef6e04db492f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[2]/a</value>
+      <webElementGuid>32cc96a5-761e-41c2-9b36-decc050c04b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@id = 'workOutIPAD' and (text() = '
+											WORK OUTPUT
+										' or . = '
+											WORK OUTPUT
+										')]</value>
+      <webElementGuid>5379321f-0285-40a5-bf7a-75cc9bd6dd5b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
