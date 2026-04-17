@@ -48,45 +48,55 @@ def value
 
 def worktypes = []
 
+println(numberofpage)
+
 for (int i = 1; i <=numberofpage; i++)
 	 
-	{     
+	{    
+		 WebUI.waitForElementVisible(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'), 10)
+
 		 List<WebElement> rows = WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'),10)
 					  
-			for (int j = 0; j <= rows.size(); j++) 
+			for (int j = 1; j <rows.size(); j++) 
 				 {
 	
 					 
 					 TestObject obj = new TestObject() 
 					 
-					 obj.addProperty("xpath", ConditionType.EQUALS, "//*[@id='CommonDataTableId']/tbody/tr[${j+1}]/td[5]")
+					 obj.addProperty("xpath", ConditionType.EQUALS, "//*[@id='CommonDataTableId']/tbody/tr[${j}]/td[5]")
 					
 					 def numberofgroup = WebUI.getText(obj).trim().toInteger()
 					 
 					 
 					 TestObject obj1 = new TestObject()
 					 
-					 obj1.addProperty("xpath", ConditionType.EQUALS, "//*[@id='CommonDataTableId']/tbody/tr[${j+1}]/td[6]/span/i")
+					 obj1.addProperty("xpath", ConditionType.EQUALS, "//*[@id='CommonDataTableId']/tbody/tr[${j}]/td[6]/span/i")
 					
 					 def status = WebUI.getAttribute(obj1, "title").trim()
-					
-					 if ((numberofgroup>0) &&( status=='Click to inactivate'))
+				
+				if (numberofgroup > 0 && status.equals("Click to inactivate"))
 					 
 							 {
-									 List<WebElement> cols = rows[j].findElements(By.tagName("td"))
+									
 						 
 									 if (header.size() == 6) {
-										 value = cols[1].getText().trim()
-										 worktypes.add(value)
-										 print(worktypes)
-										 println(numberofgroup)
-										 println(status)
+										 
+										 TestObject obj3 = new TestObject()
+					 
+										 obj3.addProperty("xpath", ConditionType.EQUALS, "//table[@id='CommonDataTableId']/tbody/tr[${j}]/td[2]")
+										 def worktype=WebUI.getText(obj3).trim()
+										 worktypes.add(worktype)
+										// print(worktypes)
 										 
 										 
 									 }
 									 else if (header.size() < 6) {
-										  value = cols[0].getText().trim()
-										 worktypes.add(value)
+										  TestObject obj4 = new TestObject()
+					 
+										 obj4.addProperty("xpath", ConditionType.EQUALS, "//table[@id='CommonDataTableId']/tbody/tr[${j}]/td[2]")
+										 def worktype=WebUI.getText(obj4).trim()
+										 worktypes.add(worktype)
+										 //print(worktypes)
 									 }
 						
 					 }
@@ -94,7 +104,9 @@ for (int i = 1; i <=numberofpage; i++)
 				
 					 
 			}
-	 
+			
+			
+		
 			TestObject nextBtn =findTestObject('Worktype Definition Screen/Page_ProHance Work Output/pagination_next button')
 			
 			String classValue = WebUI.getAttribute(nextBtn, "class")
@@ -106,11 +118,10 @@ for (int i = 1; i <=numberofpage; i++)
 				 WebUI.click(nextBtn)
 				
 				 WebUI.delay(1)
-	
+				
 			}
 	 
-
-
 			worktypes.each{println it}
+
 WebUI.closeBrowser()
 

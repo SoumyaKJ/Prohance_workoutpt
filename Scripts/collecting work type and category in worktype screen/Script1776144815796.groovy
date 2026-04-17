@@ -41,91 +41,67 @@ WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Wor
 WebUI.waitForElementVisible(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'), 50)
 
 def headers = WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/table header'), 
-    10).collect({ 
-        it.getText().trim()
-    })
+    10).collect({ it.getText().trim() })
 
 println("Headers: $headers")
 
-def rows = WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'), 
-    10)
+def rows = WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'), 10)
 
-// Optional: find header row separately
-rows.each{ def row ->
+def page=WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/pagination'),10)
+
+def numberofpage=page.size()
+
+println(numberofpage)
+
+def Data = []
+
+for (int i=1; i <=numberofpage; i++)
+{
+			
+     def rws = WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'),10)
+
+     rws.each{ def row ->
+		 
         List<WebElement> cols = row.findElements(By.tagName('td'))
 
-		def columnData = []
+		
 
-        if (cols.size() == 6) {
-            // ensure both columns exist
+        if (cols.size() == 6) 
+			{
+          
             def worktype = (cols[1]).getText().trim()
 
             def category = (cols[3]).getText().trim()
 
-            columnData.add("$worktype->$category") // ensure both columns exist
-        } 
-		else if (cols.size() < 6) {
+            Data.add("$worktype->$category")
+           } 
+		else if (cols.size() < 6) 
+			{
             def worktype = (cols[0]).getText().trim()
 
             def category = (cols[2]).getText().trim()
 
-            columnData.add("$worktype->$category")
-        }
+            Data.add("$worktype->$category")
+			}
 		
-		println(columnData)
+	}
 
-}     
-		
-	def pagination = WebUI.findWebElements(findTestObject('Normalization Screen/Page_ProHance Work Output/pagination'),10)
-	def numberofpage=pagination.size()
-	println(numberofpage)
-	def Data = []
-	if(numberofpage>3)
-	{
-		 for (int i=1; i <=numberofpage; i++)
-			  {
+
+	TestObject nextBtn =findTestObject('Worktype Definition Screen/Page_ProHance Work Output/pagination_next button')
+			
+	String classValue = WebUI.getAttribute(nextBtn, "class")
+			
+	if (classValue.contains("disabled"))
+		{
+			 break
+		}
+	
+		WebUI.click(nextBtn)
 				
-				  def rws = WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'),
-					  10)
-				  rws.each{ def r ->
-				  List<WebElement> cols = r.findElements(By.tagName('td'))
-				
-				  if (cols.size() == 6) 
-						{ 
-				// ensure both columns exist
-							def worktype = (cols[1]).getText().trim()
-	
-							def category = (cols[3]).getText().trim()
-							
-							Data.add("$worktype->$category") // ensure both columns exist
-						}
-						else if (cols.size() < 6)
-							 {
-								 def worktype = (cols[0]).getText().trim()
-	
-								 def category = (cols[2]).getText().trim()
-	
-								Data.add("$worktype->$category")
-							 }
-							
-				  }
-				  
-				 
-				  if(numberofpage == i)
-				  {
-					  break
-				  } 
-			 TestObject pageBtn = new TestObject()
-			 
-			 pageBtn.addProperty("xpath",ConditionType.EQUALS,"//ul[@class='pagination']/li[@class='paginate_button '][${i}]/a")
+		WebUI.delay(1)
+		WebUI.waitForPageLoad(10)
+		  }
+Data.each { println it }
 
-			 WebUI.click(pageBtn)
-
-			 WebUI.waitForElementPresent(findTestObject('Normalization Screen/Page_ProHance Work Outputworktype/rows'),10 )
-				  }
-
-	Data.each { println it }
-	
-}
 WebUI.closeBrowser()
 

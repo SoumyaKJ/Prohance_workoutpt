@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul/li[@class='paginate_button ']</value>
+         <value>//div[@id='CommonDataTableId_paginate']/ul[@class='pagination']/li/a[text()]</value>
       </entry>
       <entry>
          <key>BASIC</key>

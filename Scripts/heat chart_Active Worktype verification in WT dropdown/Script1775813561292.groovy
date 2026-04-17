@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -24,44 +23,47 @@ CustomKeywords.'com.prohance.workoutput.common.Heatchartwidget.addHeatChartWidge
 
 def text = WebUI.getText(findTestObject('Heat Chart/Page_ProHance Work Output/heat chart label'))
 
-print (text)
+print(text)
 
 if (text == 'Heat Chart') {
-	
-	WebUI.click(findTestObject('Heat Chart/Page_ProHance Work Output/filter'))
+    WebUI.click(findTestObject('Heat Chart/Page_ProHance Work Output/filter'))
 
     WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/All groups label'))
 
     WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/metric selection'))
 
     WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/all category'))
-	
-   def totalworktypes = WebUI.findWebElements(findTestObject('Output Trend Report/Page_ProHance Work Output/all worktypes'), 10).collect({ it.getText().trim()}).findAll({ it != 'All Work Types'}) // exclude "All Work Types"
-      
-		println(totalworktypes.size())
-		
-			WebUI.waitForElementVisible(findTestObject('Output Trend Report/Page_ProHance Work Output/fetch'), 10)
-		
-			WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/fetch'))
-		
-			def w = WebUI.callTestCase(findTestCase('worktype definition screen'), [:], FailureHandling.STOP_ON_FAILURE)
-		
-			//def wStrings = w.collect { it.toString().trim() }
-			//def totalStrings = totalworktypes.collect { it.toString().trim() }
-			def wStrings = CustomKeywords.'com.prohance.workoutput.common.Sample.cleanList'(w)
-		
-			def totalStrings = CustomKeywords.'com.prohance.workoutput.common.Sample.cleanList'(totalworktypes)
-		
-			if (wStrings == totalStrings)
-				{
-				println('Outputput Widgtes:All Active worktypes present in the worktype dropdowns')
-				}
-			else {
-				println('Outputput Widgtes:All Active worktypes not present in the worktype dropdowns')
-				}
-		}
-		
+
+    def totalworktypes = WebUI.findWebElements(findTestObject('Output Trend Report/Page_ProHance Work Output/all worktypes'), 
+        10).collect({ 
+            it.getText().trim()
+        }).findAll({ 
+            it != 'All Work Types'
+        } // exclude "All Work Types"
+        )
+
+    println(totalworktypes.size())
+
+    WebUI.waitForElementVisible(findTestObject('Output Trend Report/Page_ProHance Work Output/fetch'), 10)
+
+    WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/fetch'))
+
+     //WebUI.callTestCase(findTestCase('worktype definition screen'), [:], FailureHandling.STOP_ON_FAILURE)
+
+  def w = WebUI.callTestCase(findTestCase('worktype definition screen all mapped wt with active'), [:], FailureHandling.STOP_ON_FAILURE)
+
+    //def wStrings = w.collect { it.toString().trim() }
+    //def totalStrings = totalworktypes.collect { it.toString().trim() }
+    def wStrings = CustomKeywords.'com.prohance.workoutput.common.Sample.cleanList'(w)
+
+    def totalStrings = CustomKeywords.'com.prohance.workoutput.common.Sample.cleanList'(totalworktypes)
+
+    if (wStrings == totalStrings) {
+        println('Outputput Widgtes:All Active worktypes present in the worktype dropdowns')
+    } else {
+        println('Outputput Widgtes:All Active worktypes not present in the worktype dropdowns')
+    }
+}
 
 WebUI.closeBrowser()
-
 

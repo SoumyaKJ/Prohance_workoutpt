@@ -39,6 +39,8 @@ WebUI.waitForElementVisible(findTestObject('Worktype Definition Screen/Page_ProH
 
 def pagination = WebUI.findWebElements(findTestObject('Normalization Screen/Page_ProHance Work Output/pagination'), 10)
 
+def header = WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/table header'),10)
+
 def numberofpage = pagination.size()
 
 println(numberofpage)
@@ -46,56 +48,195 @@ println(numberofpage)
 def Data = []
 
 if (numberofpage > 3) {
-    for (int i = 1; i <= numberofpage; i++) {
-        def rws = WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'), 
-            10)
+	
+    for (int i = 1; i <= numberofpage; i++) 
+		{
+        def rows = WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'),10)
+		
+		for (int j = 1; j <=rows.size(); j++)
+			{
+				def totalnumberofrows=rows.size()
+				
+				print("$j")
+				
+				print("$totalnumberofrows")
+				
+				if (header.size() == 6) {
+				
+				//category from Wt defintino table
+						
+				TestObject obj = new TestObject()
+				
+				obj.addProperty("xpath", ConditionType.EQUALS, "//*[@id='CommonDataTableId']/tbody/tr[${j}]/td[4]/div")
+			   
+				def Category = WebUI.getText(obj).trim()
+				
+				//worktype from Wt defintino table
+				TestObject obj1 = new TestObject()
+				
+				obj1.addProperty("xpath", ConditionType.EQUALS, "//*[@id='CommonDataTableId']/tbody/tr[${j}]/td[2]/div")
+			   
+				def worktype = WebUI.getText(obj1).trim()
+				
+				print("$worktype,$Category")
+					  
+	 //category screen
+		 WebUI.waitForElementVisible(findTestObject('Object Repository/Page_ProHance Work Output/div_SIDEBAR MENU'), 10)
+		 
+		 WebUI.switchToDefaultContent()
+		
+		 WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/div_SIDEBAR MENU'))
+		 
+		 WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/li_Work Type Category'))
+		 
+		 WebUI.waitForElementVisible(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/li_Work Type Category'), 10)
+		 
+		 //seraching category in category screen
+		 
+         TestObject searchBox = findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/input_Search_form-control input-sm')
+			
+		 WebUI.waitForElementVisible(searchBox, 10)
+		 
+         WebUI.clearText(searchBox)
+		 
+         WebUI.setText(searchBox, Category)
+  
+		 WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/a_32'))
+					  
+		 TestObject worktypeserach=findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/input_Search_form-control input-sm')					
+		 
+		 WebUI.waitForElementVisible(worktypeserach, 10)
+		 
+         WebUI.clearText(worktypeserach)
+		
+         WebUI.setText(worktypeserach, worktype)
+		 
+		 WebUI.waitForElementVisible(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/category_wt'), 10)
+		 
+		 WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/iframe'), 10)
+		 
+		 def categoryworktype=  WebUI.findWebElement(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/category_wt'))
+		 
+		 def worktypename=categoryworktype.getText().trim()
+		 
+		 print(worktypename)
+					
+					if (worktypename == worktype)
+					{
+						print("worktype present under mapped category")
+					}
+					else
+						{
+						print("worktype present under mapped category")
+					}
+                     
+				}
+				
+				else if(header.size()< 6) 
+					{ 
+							TestObject obj = new TestObject()
+				
+				obj.addProperty("xpath", ConditionType.EQUALS, "//*[@id='CommonDataTableId']/tbody/tr[${j}]/td[3]/div")
+			   
+				def Category = WebUI.getText(obj).trim()
+				
+				TestObject obj1 = new TestObject()
+				
+				obj1.addProperty("xpath", ConditionType.EQUALS, "//*[@id='CommonDataTableId']/tbody/tr[${j}]/td[1]/div")
+			   
+				def worktype = WebUI.getText(obj1).trim()
+				
+				print("$worktype,$Category")
+					  
+	 //category screen
+		 WebUI.waitForElementVisible(findTestObject('Object Repository/Page_ProHance Work Output/div_SIDEBAR MENU'), 10)
+		 
+		 WebUI.switchToDefaultContent()
+		
+		 WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/div_SIDEBAR MENU'))
+		 
+		 WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/li_Work Type Category'))
+		 
+		 WebUI.waitForElementVisible(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/li_Work Type Category'), 10)
+		 
+		 //seraching category in category screen
+		 
+         TestObject searchBox = findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/input_Search_form-control input-sm')
+			
+		 WebUI.waitForElementVisible(searchBox, 10)
+		 
+         WebUI.clearText(searchBox)
+		 
+         WebUI.setText(searchBox, Category)
+  
+		 WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/a_32'))
+					  
+		 TestObject worktypeserach=findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/input_Search_form-control input-sm')					
+		 
+		 WebUI.waitForElementVisible(worktypeserach, 10)
+		 
+         WebUI.clearText(worktypeserach)
+		
+         WebUI.setText(worktypeserach, worktype)
+		 
+		 WebUI.waitForElementVisible(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/category_wt'), 10)
+		 
+		 WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/iframe'), 10)
+		 
+		 def categoryworktype=  WebUI.findWebElement(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/category_wt'))
+		 
+		 def worktypename=categoryworktype.getText().trim()
+		 
+		 print(worktypename)
+					
+					if (worktypename == worktype)
+					{
+						print("worktype present under mapped category")
+					}
+					else
+						{
+						print("worktype present under mapped category")
+					}
+                     
+				}
+				
+	WebUI.switchToDefaultContent()
+	
+	WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/refresh'))
+				
+	WebUI.waitForElementVisible(findTestObject('Object Repository/Page_ProHance Work Output/div_SIDEBAR MENU'), 10)
+	
+	WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/div_SIDEBAR MENU'))
+	
+	WebUI.click(findTestObject('Object Repository/Category/Page_ProHance Work Output/span_Administration'))
+	
+	WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/li_Work Type Definition'))
+				
+	WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/iframe'), 10)
+		
+	if(rows.size()==j)	
+		{
+		
+		TestObject nextBtn =findTestObject('Worktype Definition Screen/Page_ProHance Work Output/pagination_next button')
+		
+		String classValue = WebUI.getAttribute(nextBtn, "class")
+		
+		if (classValue.contains("disabled"))
+			 {
+				 break
+			 }
+			 WebUI.click(nextBtn)
+			
+			 WebUI.delay(1)
+			
+		}
+			
+	}
 
-        rws.each({ def r ->
-                List<WebElement> cols = r.findElements(By.tagName('td'))
-
-                if (cols.size() == 6) {
-                    // ensure both columns exist
-                    def worktype = (cols[1]).getText().trim()
-
-                    def category = (cols[3]).getText().trim()
-
-                    Data.add("$category" // ensure both columns exist
-                        )
-                } else if (cols.size() < 6) {
-                    def worktype = (cols[0]).getText().trim()
-
-                    def category = (cols[2]).getText().trim()
-
-                    Data.add("$category")
-                }
-            })
-
-        if (numberofpage == i) {
-            break
-        }
-        
-        TestObject pageBtn = new TestObject()
-
-        pageBtn.addProperty('xpath', ConditionType.EQUALS, "//ul[@class='pagination']/li[@class='paginate_button '][$i]/a")
-
-        WebUI.click(pageBtn)
-
-        WebUI.waitForElementPresent(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'), 
-            10)
-    }
-    
-    println("$Data")
-
-    HashSet<String> set = new HashSet()
-
-    for (String item : Data) {
-        set.add(item)
-    }
-    
-    set.each({ 
-            println(it)
-        })
-}
+ }
+		
+	
+}    
 
 WebUI.closeBrowser()
 

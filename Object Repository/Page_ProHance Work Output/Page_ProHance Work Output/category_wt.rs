@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>pagination</name>
+   <name>category_wt</name>
    <tag></tag>
-   <elementGuidId>9238d15a-c59e-4fb6-a85b-cba975474806</elementGuidId>
+   <elementGuidId>e4258887-76a1-4e60-85d0-af4c1d2df041</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='CommonDataTableId_paginate']/ul[@class='pagination']/li</value>
+         <value>//table[@id='CommonDataTableId']/tbody/tr/td[1]/div[@class='ph-wo-word-break-break-all']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

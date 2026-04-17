@@ -59,7 +59,9 @@ if (text == 'Output Trend') {
 
     WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/fetch'))
 
-    def w = WebUI.callTestCase(findTestCase('worktype definition screen'), [:], FailureHandling.STOP_ON_FAILURE)
+    //WebUI.callTestCase(findTestCase('worktype definition screen'), [:], FailureHandling.STOP_ON_FAILURE)
+
+    def w = WebUI.callTestCase(findTestCase('worktype definition screen all mapped wt with active'), [:], FailureHandling.STOP_ON_FAILURE)
 
     //def wStrings = w.collect { it.toString().trim() }
     //def totalStrings = totalworktypes.collect { it.toString().trim() }
@@ -67,13 +69,16 @@ if (text == 'Output Trend') {
 
     def totalStrings = CustomKeywords.'com.prohance.workoutput.common.Sample.cleanList'(totalworktypes)
 
-    if (wStrings == totalStrings) 
-		{
+	print(wStrings)
+	
+	print(totalStrings)
+	
+	
+    if (wStrings == totalStrings) {
         println('Outputput Widgtes:All Active worktypes present in the worktype dropdowns')
-		} 
-	else {
+    } else {
         println('Outputput Widgtes:All Active worktypes not present in the worktype dropdowns')
-    	}
+    }
 }
 
 WebUI.closeBrowser()

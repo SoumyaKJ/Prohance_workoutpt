@@ -17,3 +17,46 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance/a_WORK OUTPUT'))
+
+WebUI.switchToWindowTitle('ProHance Work Output')
+
+WebUI.click(findTestObject('Page_ProHance Work Output/div_SIDEBAR MENU'))
+
+WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/span_Administration'))
+
+WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/li_Work Type Definition'))
+
+WebUI.rightClick(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/div_Development Metrics'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/div_Development Metrics'), 
+    'Development Metrics')
+
+WebUI.rightClick(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/div_dipankar_process'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/div_dipankar_process'), 
+    '#dipankar_process')
+
+WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/td_Development Metrics'))
+
+WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/div_Soumya Admin Account_arrow-top'))
+
+WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/li_Work Type Category'))
+
+WebUI.setText(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/input_Search_form-control input-sm'), 
+    'Development Metrics')
+
+WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/a_32'))
+
+WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/div_configtable tbody tr td     padding 0px_2d422c'))
+
+WebUI.setText(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/input_Search_form-control input-sm'), 
+    '#dipankar_process')
+
+WebUI.rightClick(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/div_dipankar_process (1)'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_ProHance Work Output/Page_ProHance Work Output/div_dipankar_process (1)'), 
+    0)
+
