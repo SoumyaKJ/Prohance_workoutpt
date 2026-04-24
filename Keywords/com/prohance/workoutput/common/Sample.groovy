@@ -29,7 +29,7 @@ public class Sample {
 		{
             return []  
         }
-        if (!inputList) return [] 
+        if (!inputList) return []
         
        return inputList.collect { it?.toString()?.trim() }.findAll { it }
     }

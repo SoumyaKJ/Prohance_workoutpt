@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Metric Name_textarea_character_verfication</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>167b4b8a-de20-4fd1-8046-cd90f801a3eb</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>eaa191a1-28d0-4909-9985-18ca9adb6d82</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/normalization</testDataId>
+   </testDataLinks>
+</TestCaseEntity>

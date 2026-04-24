@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>type3_modify screen label verification</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c9f1accc-d2f8-4a7f-80a7-593d57f8167f</testCaseGuid>
+</TestCaseEntity>

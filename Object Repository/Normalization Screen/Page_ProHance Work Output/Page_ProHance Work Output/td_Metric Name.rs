@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Metric Name</name>
+   <tag></tag>
+   <elementGuidId>c0d13d70-194d-4ddc-8d58-6aa36bf6cd8b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='WOMetricForm']/div[3]/div/div/table/tbody/tr/td/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.tabletdeven</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Metric Name*&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>c1237a99-b632-4e2f-bece-030432681e65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>30%</value>
+      <webElementGuid>df4c2206-6f5d-4142-8799-4057dc4f03dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tabletdeven</value>
+      <webElementGuid>2bd24742-7bf0-4613-b30f-e862bbf3ecce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Metric Name*</value>
+      <webElementGuid>23d359a0-b79a-4706-a3b6-87b0f8b75c64</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;WOMetricForm&quot;)/div[@class=&quot;body-padded config-detail-container&quot;]/div[@class=&quot;container-fluid configtable-container&quot;]/div[@class=&quot;table-responsive admin-responsivetable&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@class=&quot;configtable table-bordered-top&quot;]/tbody[1]/tr[1]/td[@class=&quot;tabletdeven&quot;]</value>
+      <webElementGuid>8e01fc33-a55a-4f58-98d4-3d5e4f67ac71</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/iframe_Work Output Settings_contentFrame</value>
+      <webElementGuid>32c57d53-95af-4720-ad9c-d98d93284761</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='WOMetricForm']/div[3]/div/div/table/tbody/tr/td/table/tbody/tr/td</value>
+      <webElementGuid>f8e95555-9831-487f-ae4b-329929b19015</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BACK'])[1]/following::td[2]</value>
+      <webElementGuid>b9efb857-0719-4144-ad60-fa224ef0cce1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='#100'])[1]/preceding::td[1]</value>
+      <webElementGuid>7abef563-bcf9-4018-bbaf-8eb0dbd6fb64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Metric Name']/parent::*</value>
+      <webElementGuid>f010ad72-d8f1-4a1e-99c7-0aeb6315d5fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/table/tbody/tr/td</value>
+      <webElementGuid>c2aeed8f-6fec-4815-b504-7d584c593925</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Metric Name*' or . = 'Metric Name*')]</value>
+      <webElementGuid>473e164e-1643-45d9-8bad-a2839fcc31fb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

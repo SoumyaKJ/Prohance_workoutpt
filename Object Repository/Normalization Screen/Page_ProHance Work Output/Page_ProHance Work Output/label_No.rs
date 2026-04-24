@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_No</name>
+   <tag></tag>
+   <elementGuidId>fd853be8-5019-477c-9894-c71daa873361</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='WOMetricForm']/div[3]/div/div/table/tbody/tr/td/table/tbody/tr[4]/td[2]/span[2]/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;No&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>fdb9d605-2762-4249-84fc-cbf51341c0f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>activeStatus_No</value>
+      <webElementGuid>9236d814-83a2-433c-84c1-f78122b249bc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> No</value>
+      <webElementGuid>b2c5ed6c-0bce-4685-8e60-a38d5002cacb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;WOMetricForm&quot;)/div[@class=&quot;body-padded config-detail-container&quot;]/div[@class=&quot;container-fluid configtable-container&quot;]/div[@class=&quot;table-responsive admin-responsivetable&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@class=&quot;configtable table-bordered-top&quot;]/tbody[1]/tr[4]/td[@class=&quot;tabletdeven&quot;]/span[@class=&quot;radio radio-success radio-inline ph-wo-padding-right-20px&quot;]/label[1]</value>
+      <webElementGuid>1afa5c50-0dcd-44af-bc8e-34b39881211d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/iframe_Work Output Settings_contentFrame</value>
+      <webElementGuid>58d62a07-cbfc-43ca-bcbd-972850a8f86b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='WOMetricForm']/div[3]/div/div/table/tbody/tr/td/table/tbody/tr[4]/td[2]/span[2]/label</value>
+      <webElementGuid>9eac24cd-b59d-47b7-97fe-8781b4a02fb4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[5]/following::label[2]</value>
+      <webElementGuid>087ab6ec-7499-468a-9c60-dcbfbdbc41b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CLEAR'])[1]/preceding::label[1]</value>
+      <webElementGuid>b09b9859-1fe9-4786-b307-0ecd326a50dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SAVE'])[1]/preceding::label[1]</value>
+      <webElementGuid>eba805f5-5f5d-41c2-bf90-7cdf3635ba26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/label</value>
+      <webElementGuid>e1bbea16-4335-48d5-9040-26544461eb13</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = ' No' or . = ' No')]</value>
+      <webElementGuid>cfa16c1f-c92f-46de-b080-458cb60dc91c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

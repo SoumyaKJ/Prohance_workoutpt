@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_Work Output Normalization (1)</name>
+   <tag></tag>
+   <elementGuidId>99d07e32-1fea-4b24-b4cb-8f361760344a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@id='level2_291']/li[5]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#level2_291 > li:nth-of-type(5)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Work Output Normalization&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>66f4eae5-9340-4dd7-9fc1-d7385f5d3370</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-onclick</name>
+      <type>Main</type>
+      <value>fnMenuClick</value>
+      <webElementGuid>9abd242a-7423-42d5-b48e-4b6d6f7e8c9d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-menuid</name>
+      <type>Main</type>
+      <value>265</value>
+      <webElementGuid>2d733952-cca3-4a0e-aa8b-a0db40c20619</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-path</name>
+      <type>Main</type>
+      <value>/phworkoutput/WOMetricSummary.htm?menuItemId=265&amp;menuClick=true</value>
+      <webElementGuid>bf9a2c05-5694-496b-a1be-42b9edd4da46</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-isajaxsidemenu</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>36e2e0ef-dff7-4b59-b345-3a02f722665d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Work Output Normalization</value>
+      <webElementGuid>431ba992-f35e-4b41-a7c9-00178104c64b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;level2_291&quot;)/li[@class=&quot;&quot;]</value>
+      <webElementGuid>f9397a6c-3449-48da-913e-f9adb8b9abc8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//ul[@id='level2_291']/li[5]</value>
+      <webElementGuid>82fedea8-7110-4c36-9ff4-2b57ec0b6f33</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Work Type Definition'])[1]/following::li[1]</value>
+      <webElementGuid>d7a31c46-0849-479f-918c-48839d6c8f48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Work Type Attributes'])[1]/following::li[2]</value>
+      <webElementGuid>ce0ba605-2106-456e-b048-8e5d14b62e83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data Collection'])[1]/preceding::li[1]</value>
+      <webElementGuid>78abc554-040d-46cc-aa8e-3b845d63b3e9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Work Output Settings'])[1]/preceding::li[2]</value>
+      <webElementGuid>b172afa6-3eb5-4879-9f5f-dfb86ada5b80</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Work Output Normalization']/parent::*</value>
+      <webElementGuid>f61aecdb-1048-40f0-b8db-34768da9edb2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/ul/li[5]</value>
+      <webElementGuid>5aebcb42-03ed-45a2-a087-3dbc1cb83223</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[(text() = 'Work Output Normalization' or . = 'Work Output Normalization')]</value>
+      <webElementGuid>cc7514e7-a2da-482c-b6ed-f6037fe9466e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

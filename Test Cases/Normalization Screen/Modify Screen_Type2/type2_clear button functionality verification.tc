@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>type2_clear button functionality verification</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>69e7fcc0-be2a-486e-8f92-3a8c34f962ff</testCaseGuid>
+</TestCaseEntity>

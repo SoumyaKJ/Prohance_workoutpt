@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>type3_save button functionality verification</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1166d3f4-dd57-4ce5-a4d4-28aec495bbf6</testCaseGuid>
+</TestCaseEntity>

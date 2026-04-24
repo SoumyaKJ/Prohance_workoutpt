@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>type3_Allow only the selected activities radio button functionality varification</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a81cb730-715f-4c25-8455-399207615bd6</testCaseGuid>
+</TestCaseEntity>

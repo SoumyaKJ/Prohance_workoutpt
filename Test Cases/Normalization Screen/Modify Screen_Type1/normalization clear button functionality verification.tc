@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>normalization clear button functionality verification</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3456f6bc-c209-49df-af28-05e3fac201db</testCaseGuid>
+</TestCaseEntity>

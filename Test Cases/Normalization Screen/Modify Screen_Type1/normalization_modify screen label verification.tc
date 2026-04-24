@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>normalization_modify screen label verification</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5b0ef0f9-8c9f-429b-9a3c-444defeff95e</testCaseGuid>
+</TestCaseEntity>

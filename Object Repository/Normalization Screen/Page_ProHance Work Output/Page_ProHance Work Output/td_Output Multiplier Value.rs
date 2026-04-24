@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Output Multiplier Value</name>
+   <tag></tag>
+   <elementGuidId>1218e9e7-2fd7-4065-9f33-0eb938585c82</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='WOMetricForm']/div[3]/div/div/table/tbody/tr/td/table/tbody/tr[3]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>tr.ph-wo-border-top-solid-1px-ededed > td.tabletdeven</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Output Multiplier Value*&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>d6d835b7-319a-4125-8f36-984557b947ef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>30%</value>
+      <webElementGuid>bb384e37-1096-4a41-9ea4-18edfcb64996</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tabletdeven</value>
+      <webElementGuid>ad9e4401-2847-432d-a064-2f8bfda31403</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Output Multiplier Value*</value>
+      <webElementGuid>c748b26e-31e4-43f2-83bb-bc9396b18a7c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;WOMetricForm&quot;)/div[@class=&quot;body-padded config-detail-container&quot;]/div[@class=&quot;container-fluid configtable-container&quot;]/div[@class=&quot;table-responsive admin-responsivetable&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@class=&quot;configtable table-bordered-top&quot;]/tbody[1]/tr[@class=&quot;ph-wo-border-top-solid-1px-ededed&quot;]/td[@class=&quot;tabletdeven&quot;]</value>
+      <webElementGuid>5af27458-a0d4-48ae-8d2e-34984a8b3e7a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/iframe_Work Output Settings_contentFrame</value>
+      <webElementGuid>aeec2db9-7324-4100-9155-c72013269d15</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='WOMetricForm']/div[3]/div/div/table/tbody/tr/td/table/tbody/tr[3]/td</value>
+      <webElementGuid>d9a253c2-8da6-4441-936d-a2b84072be74</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Non Productive'])[1]/following::td[1]</value>
+      <webElementGuid>66d53788-fab4-40db-bc7c-58b519705ad9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='#8'])[1]/preceding::td[1]</value>
+      <webElementGuid>13ce4a2b-773e-4d9c-9618-c7e43c262ed9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Output Multiplier Value']/parent::*</value>
+      <webElementGuid>6a0c7f02-47c7-4878-b00f-aef671f0c7dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td</value>
+      <webElementGuid>3810db9b-e16f-4321-afad-fcbd11b2d325</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Output Multiplier Value*' or . = 'Output Multiplier Value*')]</value>
+      <webElementGuid>6623876a-b334-45ee-99e5-643f1f476d37</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

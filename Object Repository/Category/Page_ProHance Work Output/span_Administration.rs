@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='nav']/li[4]/a/span</value>
+         <value>//ul[@id='nav']/li[4]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>77c63fb3-49be-4c7a-91d9-b35783f8eba6</webElementGuid>
+      <webElementGuid>4047f22b-bc34-438b-9e86-4e04665c8235</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +36,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Administration</value>
-      <webElementGuid>f8a525c0-b48d-47ee-b1e4-24f5779a5291</webElementGuid>
+      <webElementGuid>db7031a9-28ad-43b5-969a-fa16064ed0b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +44,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;nav&quot;)/li[@class=&quot;main-menu collapsed ph-wo-font-size-11px&quot;]/a[@class=&quot;ph-wo-padding-10px&quot;]/span[1]</value>
-      <webElementGuid>0d21510c-022c-43bf-ba87-0e2151e265b8</webElementGuid>
+      <webElementGuid>09b2c311-eee6-438b-88c0-b7c13c59d801</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +52,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//ul[@id='nav']/li[4]/a/span</value>
-      <webElementGuid>bb622299-a1be-42e1-867c-7357a270976a</webElementGuid>
+      <webElementGuid>032c4c47-f394-4f0c-8c47-998e66a811dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +60,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capacity Planning'])[1]/following::span[1]</value>
-      <webElementGuid>df08a2c9-d5ff-4c9b-962c-622d6d0eaab2</webElementGuid>
+      <webElementGuid>0df849eb-973e-45a4-9193-bdb1df4c83d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Workforce Management'])[1]/following::span[1]</value>
-      <webElementGuid>72a00e14-2f6e-49ac-8375-4691726ab31e</webElementGuid>
+      <webElementGuid>e40a2335-c2cc-4754-b6ea-41cab8dcc5ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Work Output Parameter'])[1]/preceding::span[1]</value>
-      <webElementGuid>022f6834-8452-4895-8878-2330675106d7</webElementGuid>
+      <webElementGuid>a8c5d13e-a7cc-4064-96ac-cf78ccebd00b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Work Type Category'])[1]/preceding::span[1]</value>
-      <webElementGuid>c198c835-d74f-4d37-b46f-a0736a20e269</webElementGuid>
+      <webElementGuid>3e50fca5-cd62-47f1-b2fa-c602c20ea949</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Administration']/parent::*</value>
-      <webElementGuid>a92fa403-a86f-4de4-9440-72cbe013bfbc</webElementGuid>
+      <webElementGuid>a25bb624-aacc-4c13-9b21-5fae206ecd30</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[4]/a/span</value>
-      <webElementGuid>c66fa61d-fce3-4666-bda8-2463b0cf9b58</webElementGuid>
+      <webElementGuid>c3fce5fb-b1d0-44eb-b9c7-391da3308e3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +108,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Administration' or . = 'Administration')]</value>
-      <webElementGuid>1cc0f3be-7b98-4477-a794-3bfb66d7127e</webElementGuid>
+      <webElementGuid>db3970d7-fc90-478d-bba4-4f08dd575ec1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

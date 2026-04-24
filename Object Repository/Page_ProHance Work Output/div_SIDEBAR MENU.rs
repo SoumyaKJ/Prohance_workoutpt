@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='swipe-area']</value>
+         <value>//*[@id='swipe-area']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>53f0da26-95f1-433f-a775-2c63a5ce7d4c</webElementGuid>
+      <webElementGuid>99a88063-b5c1-4f31-9463-6935900534e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>swipe-area ph-wo-width-35px ph-wo-position-fixed</value>
-      <webElementGuid>8f70c88a-ecdf-4c9a-a564-379e88855423</webElementGuid>
+      <webElementGuid>6392e35a-710d-41c6-9e2d-eb7bf1f1210c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>id</name>
       <type>Main</type>
       <value>swipe-area</value>
-      <webElementGuid>47bcd59e-23a5-496b-a786-2f6565ba5d5f</webElementGuid>
+      <webElementGuid>d07b0496-8edc-41e9-8789-97bec55b5c63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>data-onclick</name>
       <type>Main</type>
       <value>fnShowSideBar</value>
-      <webElementGuid>5db3f686-ee92-4516-9535-2389c14c45b0</webElementGuid>
+      <webElementGuid>6f1b6c55-b966-41a8-89cc-4dbf6ed094ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -67,7 +67,7 @@
 				
 				
 			</value>
-      <webElementGuid>6f99b925-47ec-4198-b252-7bd584da6101</webElementGuid>
+      <webElementGuid>af31011c-f4c2-4a01-b054-e1caca3b9b3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -75,7 +75,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;swipe-area&quot;)</value>
-      <webElementGuid>b3bbfc6c-2f5e-4416-95bb-103c0f1c5588</webElementGuid>
+      <webElementGuid>ac160709-9fbe-4ac7-ba59-abc6678e2e84</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -83,7 +83,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='swipe-area']</value>
-      <webElementGuid>38a588c3-d814-4ca2-b0b7-1a8481a05e36</webElementGuid>
+      <webElementGuid>84f1d64d-06f4-4159-a2f1-cd333c3448c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -91,7 +91,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='sidebarDiv']/div</value>
-      <webElementGuid>07495065-fe5d-4b7e-a9c4-0f890901edf6</webElementGuid>
+      <webElementGuid>32d79046-894f-445e-85f5-73bfada9b9f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,7 +99,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Soumya Admin Account'])[1]/following::div[14]</value>
-      <webElementGuid>040e28a8-fcae-45ef-8fe0-e9b6ee660390</webElementGuid>
+      <webElementGuid>b95886f4-3720-450e-8080-08fffe1fe948</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -107,7 +107,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='User:'])[1]/following::div[14]</value>
-      <webElementGuid>5fc8d18c-d062-46e4-b37a-e5c4850a9d77</webElementGuid>
+      <webElementGuid>e33b9178-91d7-4ab7-9837-ab34c9713a5a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -115,7 +115,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='WORK OUTPUT'])[2]/preceding::div[6]</value>
-      <webElementGuid>0dee7277-6715-4e44-b0d3-6a3ee530066f</webElementGuid>
+      <webElementGuid>5abed43a-8119-40d5-80e6-d359223a3d27</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -123,7 +123,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[3]/div/div/div</value>
-      <webElementGuid>a972da74-8027-4b80-a7c8-50b1d1870281</webElementGuid>
+      <webElementGuid>223ee6e9-6e60-4342-b34f-f483621c52c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -143,6 +143,6 @@
 				
 				
 			')]</value>
-      <webElementGuid>bd5e38c3-cc94-4c77-a7ae-5bee86c8933a</webElementGuid>
+      <webElementGuid>3da278c4-ada2-4366-b18d-aecb06d771c7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

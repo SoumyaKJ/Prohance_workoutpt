@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Is Active</name>
+   <tag></tag>
+   <elementGuidId>96609092-1499-447c-8755-2b7c20da20a1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='WOMetricForm']/div[3]/div/div/table/tbody/tr/td/table/tbody/tr[4]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>tr:nth-of-type(4) > td.tabletdeven</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;Is Active*&quot;s]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>47fe5d75-1656-4a15-b2f5-ca174aa819b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tabletdeven</value>
+      <webElementGuid>cd97c18d-1999-4ea0-a9dc-11bcfd929837</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>30%</value>
+      <webElementGuid>e2db0290-e919-4c34-8420-420f22a0f3fd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Is Active*</value>
+      <webElementGuid>82d337b6-1e16-4867-8c83-98dc52a96ada</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;WOMetricForm&quot;)/div[@class=&quot;body-padded config-detail-container&quot;]/div[@class=&quot;container-fluid configtable-container&quot;]/div[@class=&quot;table-responsive admin-responsivetable&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@class=&quot;configtable table-bordered-top&quot;]/tbody[1]/tr[4]/td[@class=&quot;tabletdeven&quot;]</value>
+      <webElementGuid>2542f3d6-845c-491c-9a48-23f1f486fd6e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/iframe_Work Output Settings_contentFrame</value>
+      <webElementGuid>d62b1a37-2f80-49d1-a50d-942f1ea6a7d1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='WOMetricForm']/div[3]/div/div/table/tbody/tr/td/table/tbody/tr[4]/td</value>
+      <webElementGuid>4a8547a3-4924-4c70-b0db-71887216a7cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='#8'])[1]/following::td[1]</value>
+      <webElementGuid>8f11070f-a0ba-468b-a437-fbcff47e58ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[4]/following::td[2]</value>
+      <webElementGuid>8409afd5-3617-4c15-bbb5-8f031ed8aa2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Is Active']/parent::*</value>
+      <webElementGuid>5eeab7fd-b29e-4be2-8147-2a62e436932f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td</value>
+      <webElementGuid>6802132d-61b6-4efc-b6da-dae614b2108e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Is Active*' or . = 'Is Active*')]</value>
+      <webElementGuid>6f3c9b44-d55b-472a-8036-3dce0ee75888</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

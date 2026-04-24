@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>catagory screen worktype mapping comparison with work type screen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3eaf9e86-c35b-42fc-9fae-8b0bc32e2cc8</testCaseGuid>
+</TestCaseEntity>

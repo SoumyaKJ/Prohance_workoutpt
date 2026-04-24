@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Units Label</name>
+   <tag></tag>
+   <elementGuidId>c55751b3-f71d-448e-9563-32c29449e8aa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='WOMetricForm']/div[3]/div/div/table/tbody/tr/td/table/tbody/tr/td[2]/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.ph-wo-margin-left-15px</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Units Label&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a9fae967-7ed2-4b70-9926-5f9d7fd88a33</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ph-wo-margin-left-15px</value>
+      <webElementGuid>5bbb92c9-8226-44da-b150-a471d63a2268</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Units Label</value>
+      <webElementGuid>be3f723e-2d56-4356-b3f4-2162dfe95d38</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;WOMetricForm&quot;)/div[@class=&quot;body-padded config-detail-container&quot;]/div[@class=&quot;container-fluid configtable-container&quot;]/div[@class=&quot;table-responsive admin-responsivetable&quot;]/table[1]/tbody[1]/tr[1]/td[1]/table[@class=&quot;configtable table-bordered-top&quot;]/tbody[1]/tr[1]/td[@class=&quot;tabletdeven&quot;]/span[@class=&quot;ph-wo-margin-left-15px&quot;]</value>
+      <webElementGuid>bc122866-402c-4b82-af46-162805a1add3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/iframe_Work Output Settings_contentFrame</value>
+      <webElementGuid>fdfa4045-c9aa-4a74-82ce-cef3c0aafd90</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='WOMetricForm']/div[3]/div/div/table/tbody/tr/td/table/tbody/tr/td[2]/span[2]</value>
+      <webElementGuid>bda331bc-d41b-470a-a251-5a63c123e8b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='#100'])[1]/following::span[1]</value>
+      <webElementGuid>dccafe13-fe29-4ba2-b787-fc0fe89f9a32</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/following::span[3]</value>
+      <webElementGuid>d4299453-6abe-4a9b-b7c4-67fcb9c57217</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/preceding::span[1]</value>
+      <webElementGuid>1f1866ea-cefc-4c37-8e11-b6fe9b58f865</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='#20'])[1]/preceding::span[1]</value>
+      <webElementGuid>719602da-3e2b-4a4e-b3ef-9adaae5a5d63</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Units Label']/parent::*</value>
+      <webElementGuid>389b7b5a-5e8a-465d-a113-8f1d63e46871</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]</value>
+      <webElementGuid>e779e01f-649c-4c68-ab04-48fe2e2a52f7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Units Label' or . = 'Units Label')]</value>
+      <webElementGuid>06b54550-b60e-420e-8739-7a9cfec92849</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

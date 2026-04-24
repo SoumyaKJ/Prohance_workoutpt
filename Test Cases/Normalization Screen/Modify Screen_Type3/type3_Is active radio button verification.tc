@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>type3_Is active radio button verification</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f4a70337-6fa1-4758-a4c8-aa727ffe5ecb</testCaseGuid>
+</TestCaseEntity>
