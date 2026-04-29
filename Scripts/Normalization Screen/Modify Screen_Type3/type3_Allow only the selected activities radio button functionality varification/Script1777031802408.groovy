@@ -45,7 +45,7 @@ def options=WebUI.findWebElements(findTestObject('Object Repository/Normalizatio
 
 options.each{ op->
 	
-	def activity=op.getAttribute('id')
+	def activity=op.getText().trim()
 	
 	print activity
 }

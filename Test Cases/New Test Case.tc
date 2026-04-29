@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>New Test Case</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>e79cd0ab-fb33-4e53-90e2-1124bc89bb57</testCaseGuid>
-</TestCaseEntity>
+C:\Users\soumya.kj\Katalon Studio
+
+https://github.com/SoumyaKJ/Prohance_workoutpt
+
+C:\Users\soumya.kj\Katalon Studio\Workoutput
+
+1.cd chnage to C:\Users\soumya.kj\Katalon Studio\Workoutput
+2.git remote -v   # check existing
+3.git remote set-url origin https://github.com/your-username/your-repo.git
+4.git add .
+5.git commit -m "updated scripts"
+6.git push origin master
