@@ -60,15 +60,10 @@ if (headers.size() == 7) {
 
     def Expectedheaders = ['Actions', 'Type', 'Metric Name', 'Divisor', 'Output Multiplier', 'Unit', 'Status']
 
-    if (headers == Expectedheaders) {
-        println('Normalization table columns headers are displaying as expected')
-    } else {
-        println('Normalization table columns headers are not displaying as expected')
-    }
-    
-    if (headers != Expectedheaders) {
-        KeywordUtil.markFailedAndStop('Fail')
-    }
+    assert(headers == Expectedheaders) 
+	
+        println('Normalization table columns headers are displaying as expected\n')
+ 
     
     //Action colum modify icon verifivction
     def modify = WebUI.findWebElements(findTestObject('Normalization Screen/Page_ProHance Work Output/modify_icon'), 10).collect(

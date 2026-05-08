@@ -15,4 +15,17 @@
       </iterationEntity>
       <testDataId>Data Files/normalization</testDataId>
    </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>eaa191a1-28d0-4909-9985-18ca9adb6d82</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Metric Name</value>
+      <variableId>8536de2d-3171-4c85-bb9d-50ef7fc33dc4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8536de2d-3171-4c85-bb9d-50ef7fc33dc4</id>
+      <masked>false</masked>
+      <name>value</name>
+   </variable>
 </TestCaseEntity>

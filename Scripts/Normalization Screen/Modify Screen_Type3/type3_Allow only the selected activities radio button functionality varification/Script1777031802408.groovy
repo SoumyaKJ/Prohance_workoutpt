@@ -1,8 +1,6 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import org.openqa.selenium.By as By
 import org.openqa.selenium.Dimension as Dimension
-import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -41,15 +39,81 @@ WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/2nd radio button'))
 
-def options=WebUI.findWebElements(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/2nd radio button options'),10)
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/AOS_category radio button selection'))
 
-options.each{ op->
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/AAFS_category radio button selection'))
+
+// WO Category
+def options = WebUI.findWebElements(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/2nd radio button options'), 
+    10)
+
+def activities = options.collect({ 
+        it.getText().trim()
+    }).findAll({ 
+        it != 'UNKNOWN'
+    })
 	
-	def activity=op.getText().trim()
+
+
+// WO AOS Activities
+
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/2nd radio button'))
 	
-	print activity
-}
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/aos_activity radio button'))
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/aafs_options'),10)
+
+def options1 = WebUI.findWebElements(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/aos_options'), 
+    10)
+
+def activities1 = options1.collect({ 
+        it.getText().trim()}).findAll({ 
+        it != 'UNKNOWN AOS'
+    
+    })
+
+print(activities1)
 
 
+// WO AAFS activities 
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/aafs_activity radio button'))
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/aafs_options'),10)
+
+def options2 = WebUI.findWebElements(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/aafs_options'), 
+    10)
+
+def activities2 = options2.collect({ 
+        it.getText().trim() }).findAll({ 
+        it != 'UNKNOWN AAFS'
+    
+   
+    })
+
+//AOS activity
+		
+def wtaosactivities=WebUI.callTestCase(findTestCase('WT AOS_list/aos'), [:], FailureHandling.STOP_ON_FAILURE)
+
+assert(activities1.sort()==wtaosactivities.sort())
+
+print(' All AOS Activity present in the WO')
+
+//AAFS activity
+
+def wtaafsactivities=WebUI.callTestCase(findTestCase('WT AAFS_list/aafs'), [:], FailureHandling.STOP_ON_FAILURE)
+
+assert(activities2.sort()==wtaafsactivities.sort())
+
+print(' All AAFS Activity present in the WO')
+
+// Comparing with Work time categories
+
+def worktimecategories = WebUI.callTestCase(findTestCase('WT_categories/work type categories_list'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+assert worktimecategories== activities.sort()
+	
+print(' All category present in the WO')
+
+
+WebUI.closeBrowser()
 

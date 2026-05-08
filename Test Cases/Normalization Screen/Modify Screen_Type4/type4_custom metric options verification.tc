@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>type4_custom metric options verification</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>13e51b97-0ee2-4fa0-a2cf-b9d3e2e2df11</testCaseGuid>
+</TestCaseEntity>

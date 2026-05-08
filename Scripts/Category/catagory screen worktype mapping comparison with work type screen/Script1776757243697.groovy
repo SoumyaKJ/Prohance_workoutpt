@@ -27,11 +27,7 @@ def categoryworktypes=WebUI.callTestCase(findTestCase('Category/category work ty
 
 def worktypes = WebUI.callTestCase(findTestCase('Category/work type verification in category screen'), [:], FailureHandling.STOP_ON_FAILURE)
 
-if (categoryworktypes == worktypes) {
+assert (categoryworktypes == worktypes) 
 	
-    println('All worktypes are present under mapped category')
-} 
-else {
-    println('All worktypes are not present under mapped category')
-}
+println('All worktypes are present under mapped category')
 

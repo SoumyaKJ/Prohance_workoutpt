@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;listboxId&quot;]/td/div/table/tbody/tr/td/span</value>
+         <value>//span[@class='ph-wo-float-left']//option</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

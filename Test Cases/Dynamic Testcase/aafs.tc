@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>aafs</name>
+   <tag>AAFSTAG</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>12417b66-ccec-4fa0-8e81-bca047beb047</testCaseGuid>
+</TestCaseEntity>
