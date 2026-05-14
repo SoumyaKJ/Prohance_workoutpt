@@ -119,3 +119,129 @@ def successfulmsg=actualmsg.getText()
 assert Expected3==successfulmsg
 
 WebUI.closeBrowser()
+/*
+// Call the login test case
+WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Set browser window size to 1920x1080
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+
+// Click the WORK OUTPUT link
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance/a_WORK OUTPUT'))
+
+// Switch to the ProHance Work Output window by title
+WebUI.switchToWindowTitle('ProHance Work Output')
+
+// Click the sidebar menu
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/div_SIDEBAR MENU'))
+
+// Click the Administration span
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Administration'))
+
+// Click the Work Output Normalization list item
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/li_Work Output Normalization'))
+
+// Switch to the content frame
+WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
+
+// Click the modify icon for the type
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/type_modify_icon'))
+
+// Wait for the page to load
+WebUI.waitForPageLoad(10)
+
+// Clear the unit text field
+WebUI.clearText(findTestObject('Normalization Screen/Page_ProHance Work Output/unit text field'))
+
+// Clear the Output Multiplier Value field
+WebUI.clearText(findTestObject('Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'))
+
+// Clear the metric name field
+WebUI.clearText(findTestObject('Normalization Screen/Page_ProHance Work Output/metric name field'))
+
+// Click the save button
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/save button'))
+
+// Wait for an alert to appear
+WebUI.waitForAlert(5)
+
+//Metric Name
+def alert=WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alert'))
+
+def actualAlertText=alert.getText()
+
+println(actualAlertText)
+
+def Expected = 'Name is required information.'
+
+assert actualAlertText == Expected
+
+// Click the alert accept button
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alertaccept'))
+
+// Set the metric name field to 'type1'
+WebUI.setText(findTestObject('Normalization Screen/Page_ProHance Work Output/metric name field'), 'type1')
+
+// Click the save button
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/save button'))
+
+//Units Label
+
+// Wait for an alert to appear
+WebUI.waitForAlert(5)
+
+def alert1=WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alert'))
+
+def actualAlertText1 = alert1.getText()
+
+println(actualAlertText1)
+
+def Expected1 = 'Metric Unit is required information'
+
+assert actualAlertText1 == Expected1
+
+// Click the alert accept button
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alertaccept'))
+
+// Set the unit text field to '%'
+WebUI.setText(findTestObject('Normalization Screen/Page_ProHance Work Output/unit text field'), '%')
+
+// Click the save button
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/save button'))
+
+//Output Multiplier Value*
+
+// Wait for an alert to appear
+WebUI.waitForAlert(5)
+
+def alert2=WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alert'))
+
+def actualAlertText2 = alert2.getText()
+
+println(actualAlertText2)
+
+def Expected2 = 'Output Multiplier Value is required information'
+
+assert actualAlertText2 == Expected2
+
+// Click the alert accept button
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alertaccept'))
+
+// Set the Output Multiplier Value field to '100'
+WebUI.setText(findTestObject('Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), '100')
+
+// Click the save button
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/save button'))
+
+//sucessful message verification
+def Expected3 ="Work Output Normalization: type1 modified successfully"
+
+def actualmsg=WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/save_sucessfull message'))
+
+def successfulmsg=actualmsg.getText()
+
+assert Expected3==successfulmsg
+
+// Close the browser
+WebUI.closeBrowser()
+*/

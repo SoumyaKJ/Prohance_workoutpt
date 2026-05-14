@@ -60,13 +60,34 @@ println "✅ Selected radio value: " + selected.getAttribute('value')
 
 WebUI.closeBrowser()
 
+/*
 
-
-
-
-
-
-
-
-
-
+// Call the common login test case
+WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+// Click on WORK OUTPUT link
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance/a_WORK OUTPUT'))
+// Switch to ProHance Work Output window
+WebUI.switchToWindowTitle('ProHance Work Output')
+// Click SIDEBAR MENU
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/div_SIDEBAR MENU'))
+// Click Administration
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Administration'))
+// Click Work Output Normalization
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/li_Work Output Normalization'))
+// Switch to the content frame
+WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
+// Click modify icon for type2
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/type2_modify_icon'))
+// Wait for the page to load
+WebUI.waitForPageLoad(10)
+def activelabel = WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Is active label'))
+def label=activelabel.getText()
+print label
+def isactive=WebUI.findWebElements(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/yes and no radio button'),10)
+//Verifying that anyone radio button should be selected under isactive label
+def selected = isactive.find { it.isSelected() }
+assert selected != null : "❌ No radio button is selected"
+println "✅ Selected radio value: " + selected.getAttribute('value')
+// Close the browser
+WebUI.closeBrowser()*/

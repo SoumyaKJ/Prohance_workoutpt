@@ -64,11 +64,9 @@ for (int i=1; i<=type.size(); i++)
 
 		customMetricName.each{println(it)}
 		
-		return customMetricName
-		
 WebUI.closeBrowser()
 
-
+return customMetricName
 
 
 

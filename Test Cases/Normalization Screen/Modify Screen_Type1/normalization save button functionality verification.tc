@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>normalization save button functionality verification</name>
-   <tag></tag>
+   <tag>GenAI</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>ab934263-6ff7-4f43-badd-a4e259648ebd</testCaseGuid>

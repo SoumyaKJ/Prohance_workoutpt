@@ -6,14 +6,14 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://10.10.10.39:1020/prohance'</initValue>
+      <initValue>'http://10.10.10.31:3434/prohance'</initValue>
       <name>URL</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'soadmin'</initValue>
+      <initValue>'soumyakj'</initValue>
       <name>USERNAME</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

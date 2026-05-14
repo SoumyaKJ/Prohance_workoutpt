@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>type2_save button functionality verification</name>
-   <tag></tag>
+   <tag>GenAI</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>5a400c11-ade7-4841-83f4-02f976c2b2cf</testCaseGuid>

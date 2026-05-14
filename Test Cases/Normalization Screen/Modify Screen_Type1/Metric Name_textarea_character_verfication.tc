@@ -2,30 +2,17 @@
 <TestCaseEntity>
    <description></description>
    <name>Metric Name_textarea_character_verfication</name>
-   <tag></tag>
+   <tag>GenAI</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>167b4b8a-de20-4fd1-8046-cd90f801a3eb</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>
-      <id>eaa191a1-28d0-4909-9985-18ca9adb6d82</id>
+      <id>b76a077c-29cd-4988-97b7-375948a2473f</id>
       <iterationEntity>
          <iterationType>ALL</iterationType>
          <value></value>
       </iterationEntity>
-      <testDataId>Data Files/normalization</testDataId>
+      <testDataId>Data Files/New Test Data</testDataId>
    </testDataLinks>
-   <variableLinks>
-      <testDataLinkId>eaa191a1-28d0-4909-9985-18ca9adb6d82</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>Metric Name</value>
-      <variableId>8536de2d-3171-4c85-bb9d-50ef7fc33dc4</variableId>
-   </variableLinks>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>8536de2d-3171-4c85-bb9d-50ef7fc33dc4</id>
-      <masked>false</masked>
-      <name>value</name>
-   </variable>
 </TestCaseEntity>

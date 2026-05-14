@@ -30,31 +30,33 @@ def text = WebUI.getText(findTestObject('Heat Chart/Page_ProHance Work Output/he
 
 print(text)
 
-if (text == 'Heat Chart') {
-    WebUI.click(findTestObject('Heat Chart/Page_ProHance Work Output/filter'))
+if (text == 'Heat Chart')
+	 {
+		 WebUI.click(findTestObject('Heat Chart/Page_ProHance Work Output/filter'))
 
-    WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/All groups label'))
+		 WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/All groups label'))
 
-    WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/metric selection'))
+		 WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/metric selection'))
 
-    WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/all category'))
-
-    def totalworktypes = WebUI.findWebElements(findTestObject('Output Trend Report/Page_ProHance Work Output/all worktypes'), 
+		 WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/all category'))
+		 
+		 def totalworktypes = WebUI.findWebElements(findTestObject('Output Trend Report/Page_ProHance Work Output/all worktypes'), 
         10).collect({  it.getText().trim()}).findAll({ it != 'All Work Types'}) // exclude "All Work Types"
         
 		println(totalworktypes.size())
 		
-	WebUI.waitForElementVisible(findTestObject('Output Trend Report/Page_ProHance Work Output/fetch'), 10)
+	    WebUI.waitForElementVisible(findTestObject('Output Trend Report/Page_ProHance Work Output/fetch'), 10)
 
-    WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/fetch'))
+		WebUI.click(findTestObject('Output Trend Report/Page_ProHance Work Output/fetch'))
 
-  def worktype= WebUI.callTestCase(findTestCase('Work type definition screen/worktype definition screen all mapped wt with active'), [:], FailureHandling.STOP_ON_FAILURE)
+		def worktype= WebUI.callTestCase(findTestCase('Work type definition screen/worktype definition screen all mapped wt with active'), [:], FailureHandling.STOP_ON_FAILURE)
 
   if (worktype == totalworktypes)
 		 {
-        println('Outputput Widgtes:All Active worktypes present in the worktype dropdowns')
-    } 
-	else {
+			 println('Outputput Widgtes:All Active worktypes present in the worktype dropdowns')
+		 } 
+	else 
+		{
         println('Outputput Widgtes:All Active worktypes not present in the worktype dropdowns')
     }
 }

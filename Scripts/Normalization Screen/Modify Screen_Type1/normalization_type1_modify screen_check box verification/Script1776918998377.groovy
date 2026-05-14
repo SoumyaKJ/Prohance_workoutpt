@@ -19,7 +19,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+/*WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
 
@@ -59,4 +59,61 @@ checkboxes.each { cb ->
 }
 println "Total checkboxes found: "+ checkboxes.size()
 
+WebUI.closeBrowser()
+*/
+// Call the reusable login test case
+WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Set browser window size to 1920x1080
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+
+// Click WORK OUTPUT link
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance/a_WORK OUTPUT'))
+
+// Switch to the ProHance Work Output window by title
+WebUI.switchToWindowTitle('ProHance Work Output')
+
+// Click the sidebar menu
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/div_SIDEBAR MENU'))
+
+// Click the Administration span
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Administration'))
+
+// Click the Work Output Normalization list item
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/li_Work Output Normalization'))
+
+// Switch to the frame for Work Output Normalization
+WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
+
+// Click the modify icon for type
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/type_modify_icon'))
+
+// Wait for the page to load fully
+WebUI.waitForPageLoad(10)
+
+// Find all checkbox elements for type1_check box
+List<WebElement> checkboxes = WebUI.findWebElements(findTestObject('Normalization Screen/Page_ProHance Work Output/type1_check box'), 10)
+
+// Filter the list to only selected checkboxes
+def selectedCheckboxes = checkboxes.findAll { it.isSelected() }
+
+// Assert that at least one checkbox is selected
+assert selectedCheckboxes.size() > 0 : "❌ No checkbox is selected"
+
+// Iterate over each checkbox and print its selection state and value
+checkboxes.each { cb ->
+
+    def value = cb.getAttribute('value')
+
+    if (value == 'on')
+    {
+        value = cb.getAttribute('id')   // or name, or label text
+    }
+
+    println "check box selected :" + cb.isSelected() + " | Value: " +value
+
+}
+println "Total checkboxes found: "+ checkboxes.size()
+
+// Close the browser
 WebUI.closeBrowser()

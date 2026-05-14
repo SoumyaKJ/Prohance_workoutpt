@@ -69,7 +69,7 @@ WebUI.waitForElementVisible(findTestObject('Normalization Screen/Page_ProHance W
 
 sheet.iterator().eachWithIndex({ def row, def index ->
 	
-if (index == 0) return
+if (index == 0)
 		 
         WebUI.setText(findTestObject('Normalization Screen/Page_ProHance Work Output/metric name field'), row.getCell(0).stringCellValue)
 		
@@ -97,3 +97,100 @@ if (index == 0) return
 	})
 	
 WebUI.closeBrowser()
+
+/*
+// Call the login test case
+WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Set browser window size to 1920x1080
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+
+// Click the WORK OUTPUT link
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance/a_WORK OUTPUT'))
+
+// Switch to the ProHance Work Output window
+WebUI.switchToWindowTitle('ProHance Work Output')
+
+// Click the sidebar menu
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/div_SIDEBAR MENU'))
+
+// Click the Administration span
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Administration'))
+
+// Click the Work Output Normalization list item
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/li_Work Output Normalization'))
+
+// Switch to the content frame
+WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
+
+// Click the type2 modify icon
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/type2_modify_icon'))
+
+// Wait for the page to load
+WebUI.waitForPageLoad(10)
+
+def saveBtn = findTestObject('Normalization Screen/Page_ProHance Work Output/save button')
+
+// Wait until the save button is clickable
+WebUI.waitForElementClickable(saveBtn, 10)
+
+TestObject btn = findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/type2_modify_icon')
+
+// Wait until the modify icon button is clickable
+WebUI.waitForElementClickable(btn, 10)
+
+// Get the maxlength attribute of the metric name field
+def maxcharlength = WebUI.getAttribute(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/metric name field'),
+'maxlength')
+
+def maxlength = maxcharlength.toInteger()
+
+//using data file for the input
+def file = new File(RunConfiguration.getProjectDir() + '/Data Files/normalization metric name.xlsx')
+
+def workbook = new XSSFWorkbook(file)
+
+def sheet = workbook.getSheetAt(0)
+
+// Wait until the modify icon is clickable again
+WebUI.waitForElementClickable(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/type2_modify_icon'), 10)
+
+// Wait until the metric name field is visible
+WebUI.waitForElementVisible(findTestObject('Normalization Screen/Page_ProHance Work Output/metric name field'), 20)
+
+sheet.iterator().eachWithIndex({ def row, def index ->
+
+    if (index == 0) return
+
+    // Set text in the metric name field from Excel
+    WebUI.setText(findTestObject('Normalization Screen/Page_ProHance Work Output/metric name field'), row.getCell(0).stringCellValue)
+
+    println "Row index: $index"
+
+    println "Cell value: ${row.getCell(0)}"
+
+    // Get the entered text value from the metric name field
+    def entertext = WebUI.getAttribute( findTestObject('Normalization Screen/Page_ProHance Work Output/metric name field'),"value")
+
+    println "Entered text: " + entertext
+
+    def maxchar= entertext.length()
+
+    assert maxchar == maxlength
+
+    print "maximum length is 100\n"
+
+    // Click the save button
+    WebUI.click(saveBtn)
+
+    // Get the success message text
+    def successmsg=WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/save_sucessfull message'))
+
+    print successmsg
+
+    // Click the modify icon button again
+    WebUI.click(btn)
+})
+
+ // Close the browser
+WebUI.closeBrowser()*/

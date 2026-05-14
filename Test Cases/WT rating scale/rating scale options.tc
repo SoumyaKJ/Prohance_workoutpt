@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>rating scale options</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e75036f9-f825-4b58-a9ef-b96bc1308e93</testCaseGuid>
+</TestCaseEntity>

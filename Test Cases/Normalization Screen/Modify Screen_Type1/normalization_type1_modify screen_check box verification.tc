@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>normalization_type1_modify screen_check box verification</name>
-   <tag></tag>
+   <tag>GenAI</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>f2b37228-87c2-493c-9bb6-21712579a004</testCaseGuid>

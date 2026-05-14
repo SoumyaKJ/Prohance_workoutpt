@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>Is active radio button_verification</name>
-   <tag></tag>
+   <tag>GenAI</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>927f4b25-34c0-4119-8199-2416794bcd99</testCaseGuid>

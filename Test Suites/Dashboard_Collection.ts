@@ -4,15 +4,15 @@
    <name>Dashboard_Collection</name>
    <tag></tag>
    <delayBetweenInstances>0</delayBetweenInstances>
-   <executionMode>SEQUENTIAL</executionMode>
-   <maxConcurrentInstances>8</maxConcurrentInstances>
+   <executionMode>PARALLEL</executionMode>
+   <maxConcurrentInstances>2</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
-            <profileName>default</profileName>
+            <profileName>MYSQL</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Dashboard_widgtes_heatchart</testSuiteEntity>
@@ -20,7 +20,7 @@
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
-            <profileName>default</profileName>
+            <profileName>MSSQL</profileName>
             <requireConfigurationData>false</requireConfigurationData>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>

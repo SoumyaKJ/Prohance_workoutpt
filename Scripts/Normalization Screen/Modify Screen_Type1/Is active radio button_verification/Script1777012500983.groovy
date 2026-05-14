@@ -22,7 +22,7 @@ import java.io.FileInputStream as FileInputStream
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 
-WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+/*WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
 
@@ -61,12 +61,56 @@ println "✅ Selected radio value: " + selected.getAttribute('value')
 WebUI.closeBrowser()
 
 
+*/
 
 
+// Call the login test case
+WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
+// Set browser window size to 1920x1080
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
 
+// Click the WORK OUTPUT link
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance/a_WORK OUTPUT'))
 
+// Switch to the ProHance Work Output window
+WebUI.switchToWindowTitle('ProHance Work Output')
 
+// Click the sidebar menu
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/div_SIDEBAR MENU'))
 
+// Click the Administration span
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Administration'))
 
+// Click the Work Output Normalization list item
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/li_Work Output Normalization'))
 
+// Switch to the content frame
+WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
+
+// Click the modify icon for the type
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/type_modify_icon'))
+
+// Wait for the page to load
+WebUI.waitForPageLoad(10)
+
+// Find the 'Is active' label web element
+def activelabel = WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Is active label'))
+
+def label=activelabel.getText()
+
+print label
+
+// Find the yes and no radio buttons under Is active
+def isactive=WebUI.findWebElements(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/yes and no radio button'),10)
+
+//Verifying that anyone radio button should be selected under isactive label
+
+def selected = isactive.find { it.isSelected() }
+
+assert selected != null : "❌ No radio button is selected"
+
+println "✅ Selected radio value: " + selected.getAttribute('value')
+
+// Close the browser
+WebUI.closeBrowser()

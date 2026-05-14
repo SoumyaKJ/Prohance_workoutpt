@@ -19,7 +19,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+/*WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
 
@@ -62,4 +62,40 @@ assert outputmultiplaiertextarea.trim().isEmpty()
 
 print("outputmultiplaier text area is cleared\n")
 
+WebUI.closeBrowser()
+*/
+// Call the login test case
+WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+// Click the WORK OUTPUT link
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance/a_WORK OUTPUT'))
+// Switch to the ProHance Work Output window
+WebUI.switchToWindowTitle('ProHance Work Output')
+// Click the sidebar menu
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/div_SIDEBAR MENU'))
+// Click the Administration span
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Administration'))
+// Click the Work Output Normalization list item
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/li_Work Output Normalization'))
+// Switch to the content iframe
+WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
+// Click the modify icon for the type
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/type_modify_icon'))
+// Wait for the page to load
+WebUI.waitForPageLoad(10)
+// Click the clear button
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/clear_button'))
+String metericnamearea = WebUI.getAttribute(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/metric name field'),
+'value')
+assert metericnamearea.trim().isEmpty()
+print("meteric name area is cleared\n")
+String unittextarea = WebUI.getAttribute(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/unit text field'),
+'value')
+assert unittextarea.trim().isEmpty()
+print("unit text area is cleared\n")
+String outputmultiplaiertextarea = WebUI.getAttribute(findTestObject('Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'),
+'value')
+assert outputmultiplaiertextarea.trim().isEmpty()
+print("outputmultiplaier text area is cleared\n")
+// Close the browser
 WebUI.closeBrowser()

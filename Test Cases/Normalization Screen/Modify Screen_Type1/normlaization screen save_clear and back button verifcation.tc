@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>normlaization screen save_clear and back button verifcation</name>
-   <tag></tag>
+   <tag>GenAI</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>02ce6c7e-3e92-410e-b074-dfde66821755</testCaseGuid>

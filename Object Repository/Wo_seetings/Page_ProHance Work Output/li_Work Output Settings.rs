@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_Work Output Settings</name>
+   <tag></tag>
+   <elementGuidId>a34f998d-7cc9-4e72-bb6c-16c5084c7a14</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(@data-isajaxsidemenu = 'false') and (position() = 7)]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[data-isajaxsidemenu=&quot;false&quot;]:nth-child(7)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Work Output Settings&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>e0eba47a-caba-4bd3-91d3-8353dca0939a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-onclick</name>
+      <type>Main</type>
+      <value>fnMenuClick</value>
+      <webElementGuid>a3312eb6-43cd-44f2-ba32-e24fbf019ec7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-menuid</name>
+      <type>Main</type>
+      <value>294</value>
+      <webElementGuid>64182cd5-1f37-4615-a43d-9a0e0bca9cf7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-path</name>
+      <type>Main</type>
+      <value>/phworkoutput/WorkOutputSettingSummary.htm?menuItemId=294&amp;menuClick=true</value>
+      <webElementGuid>59caa268-f104-4986-8813-f145b40a1f95</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-isajaxsidemenu</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>84b6db34-05b9-41f4-806d-36eae076845b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Work Output Settings</value>
+      <webElementGuid>1a2a6f20-0928-458f-90ca-3739ba378ccd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-1bca279ae17154be8226772f6f8cad38</value>
+      <webElementGuid>2a838130-30a7-4aa7-90dc-fadbdd79cd4a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(@data-isajaxsidemenu = 'false') and (position() = 7)]</value>
+      <webElementGuid>3f4411a8-52c4-4d59-b8cc-7e67579694e5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(@data-isajaxsidemenu = 'false') and (position() = 7)]</value>
+      <webElementGuid>674c9599-1580-4063-a4cf-0517ed74a9af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[(text() = 'Work Output Settings' or . = 'Work Output Settings')]</value>
+      <webElementGuid>1906a07a-6a32-4525-88ef-596b18a4a0e0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

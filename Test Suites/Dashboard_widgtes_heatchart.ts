@@ -18,4 +18,29 @@
       <testCaseId>Test Cases/Dashboard/heat chart_Active Worktype verification in WT dropdown</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>3fd46ced-558f-47bd-a2c3-8961212e962c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Commons/wologin</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b1ada1e6-cd8c-4c5d-8b6e-89f930b64063</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7f3c8255-08d8-4175-89e2-0c5091cf902f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>55cb5448-b42b-41f4-92f0-5259b202b60a</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

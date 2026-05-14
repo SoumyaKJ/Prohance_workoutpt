@@ -60,3 +60,21 @@ activityNames.eachWithIndex { String name, int idx ->
 
 // 12. Return the final list.
 return activityNames
+
+Summarize
+/*
+*  Capture and return trimmed, non-empty activity names from the AAFS section after navigating the admin UI.
+*
+*  1. Switch to the page's default content/frame to ensure starting from top-level DOM.
+*  2. Click the Refresh button to reload or refresh the current view.
+*  3. Wait up to 30 seconds for the Admin sidebar element to be present.
+*  4. Click the Admin sidebar to expand or focus the admin navigation.
+*  5. Click the Activities menu item to navigate to activities.
+*  6. Click the AAFS option to select the specific activities subset.
+*  7. Switch into the Work Output iframe (waiting up to 30 seconds) to operate inside that frame's DOM.
+*  8. Locate all activity name elements matching the provided test object locator within the frame and collect them as a list of WebElement objects.
+*  9. Map each WebElement to its text, filter out null or purely whitespace strings, and trim remaining strings to produce a List<String> of activity names.
+* 10. Log the count of captured activity names and then log each name with a two-digit index prefix.
+* 11. Return the final List<String> of trimmed, non-empty activity names.
+*
+*/

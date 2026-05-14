@@ -49,7 +49,35 @@ assert breadcrumb==Actualtext
 
 WebUI.closeBrowser()
 
+/*
 
-
-
-
+// Call the login test case to perform application login
+WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+// Set browser window size to 1920x1080
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+// Click the WORK OUTPUT link on the main page
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance/a_WORK OUTPUT'))
+// Switch to the window titled 'ProHance Work Output'
+WebUI.switchToWindowTitle('ProHance Work Output')
+// Click the SIDEBAR MENU to expand it
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/div_SIDEBAR MENU'))
+// Click the Administration option in the sidebar
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Administration'))
+// Click the Work Output Normalization menu item
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/li_Work Output Normalization'))
+// Switch to the content frame for Work Output Settings with a timeout of 10 seconds
+WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
+// Click the modify icon for type3 to open its details
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/type3_modify_icon'))
+// Wait for the page to load completely with a timeout of 10 seconds
+WebUI.waitForPageLoad(10)
+// Retrieve the breadcrumb text from the page
+def breadcrumb=WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/breadcrumb'))
+// Print the breadcrumb value to the console
+print breadcrumb
+// Define the expected breadcrumb text
+def Actualtext="Administration Work Output Work Output Normalization Work Output Normalization Details [Type 3] "
+// Assert that the actual breadcrumb matches the expected text
+assert breadcrumb==Actualtext
+// Close the browser to end the test
+WebUI.closeBrowser()

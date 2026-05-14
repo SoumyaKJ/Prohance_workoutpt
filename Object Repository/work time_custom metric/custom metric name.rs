@@ -6,12 +6,12 @@
    <elementGuidId>acacad9b-22d6-44d1-b992-f6416e5c8fa3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;CommonDataTableId&quot;]/tbody/tr/td[2]/div&#xd;
+</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;CommonDataTableId&quot;]/tbody/tr/td[2]/div</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>6db1c206-8ced-42c9-bb4d-f97efcaa05fc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Category/catagory screen worktype mapping comparison with work type screen</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -28,7 +28,7 @@
    <testCaseLink>
       <guid>49c5c879-f310-4cf6-b7c1-36d7ae90a4b7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Category/category work type list</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

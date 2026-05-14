@@ -2,8 +2,17 @@
 <TestCaseEntity>
    <description></description>
    <name>type2_metric name text area_characters verification</name>
-   <tag></tag>
+   <tag>GenAI</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>a3cc89d9-44a0-433d-a940-fec06db9e569</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>24fb007a-179e-477f-9607-11b6892ea999</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/normalization</testDataId>
+   </testDataLinks>
 </TestCaseEntity>

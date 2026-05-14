@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>type2_unit label text area verification</name>
-   <tag></tag>
+   <tag>GenAI</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>e3525be5-5e9f-4df7-8ace-7e374f24e952</testCaseGuid>

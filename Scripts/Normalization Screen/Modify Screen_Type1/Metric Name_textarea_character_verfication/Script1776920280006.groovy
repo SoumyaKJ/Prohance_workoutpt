@@ -67,7 +67,7 @@ WebUI.waitForElementVisible(findTestObject('Normalization Screen/Page_ProHance W
 
 sheet.iterator().eachWithIndex({ def row, def index ->
 	
-if (index == 0)
+if (index == 0) return
 		 
         WebUI.setText(findTestObject('Normalization Screen/Page_ProHance Work Output/metric name field'), row.getCell(0).stringCellValue)
 		

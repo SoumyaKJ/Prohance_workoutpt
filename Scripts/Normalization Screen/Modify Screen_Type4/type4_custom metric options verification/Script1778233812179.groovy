@@ -48,6 +48,7 @@ def custommetricname = custommetric.collect({
 
 def name=WebUI.callTestCase(findTestCase('WT_custom_metric/custom metric'), [:], FailureHandling.STOP_ON_FAILURE)
 
+//verifying custom metric with Wt
 assert(custommetricname.sort()==name.sort())
 
 print "All active duration type custom metric present in the WO type4 normalization"

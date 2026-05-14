@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description></description>
    <name>breadcrumb verification_type1</name>
-   <tag></tag>
+   <tag>GenAI</tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>978a1b38-260a-4755-907f-d0eb3400aa10</testCaseGuid>

@@ -49,12 +49,6 @@
          <testDataId>Data Files/normalization</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>5aea3c16-36e7-49cb-a21e-938d094c4627</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Metric Name</value>
-         <variableId>8536de2d-3171-4c85-bb9d-50ef7fc33dc4</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>94c77b29-13ea-4049-b93e-bd1d52588f64</guid>

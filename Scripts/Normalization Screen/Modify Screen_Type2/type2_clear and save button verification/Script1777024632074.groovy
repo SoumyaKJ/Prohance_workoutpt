@@ -49,3 +49,33 @@ WebUI.verifyElementText(findTestObject('Normalization Screen/Page_ProHance Work 
 
 WebUI.closeBrowser()
 
+/*
+// Call the login test case to perform application login
+WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+// Set the browser window size to 1920x1080
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+// Click the WORK OUTPUT link on the main page
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance/a_WORK OUTPUT'))
+// Switch to the window titled 'ProHance Work Output'
+WebUI.switchToWindowTitle('ProHance Work Output')
+// Click the sidebar menu to expand it
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/div_SIDEBAR MENU'))
+// Click the Administration option in the sidebar
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Administration'))
+// Click the 'Work Output Normalization' list item
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/li_Work Output Normalization'))
+// Switch to the frame containing Work Output Normalization content
+WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
+// Click the modify icon for type2 normalization
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/type2_modify_icon'))
+// Wait for the page to fully load
+WebUI.waitForPageLoad(10)
+// Verify the CLEAR button text is present
+WebUI.verifyElementText(findTestObject('Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/clear_button'), 'CLEAR')
+// Verify the SAVE button text is present
+WebUI.verifyElementText(findTestObject('Normalization Screen/Page_ProHance Work Output/save button'), 'SAVE')
+// Verify the BACK label text is present
+WebUI.verifyElementText(findTestObject('Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/back_label'), 'BACK')
+// Close the browser
+WebUI.closeBrowser()
+*/

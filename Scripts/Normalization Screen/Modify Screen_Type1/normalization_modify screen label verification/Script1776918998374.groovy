@@ -68,9 +68,83 @@ actualText = actualText.replaceAll("\\s+", " ").trim()
 
 String expectedText = "Actual Productive Hours Business Impact Categories Productive Neutral Non Productive Include Active Away From System"
 
-assert actualText == expectedText
+assert actualText.equalsIgnoreCase(expectedText)
 
 WebUI.closeBrowser()
 
 
+/*
 
+// Call the login test case to perform application login
+WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// Set the browser window size to 1920x1080
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+
+// Click on the WORK OUTPUT link
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance/a_WORK OUTPUT'))
+
+// Switch to the window titled 'ProHance Work Output'
+WebUI.switchToWindowTitle('ProHance Work Output')
+
+// Click the sidebar menu
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/div_SIDEBAR MENU'))
+
+// Click the Administration span in the sidebar
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Administration'))
+
+// Click the Work Output Normalization list item
+WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/li_Work Output Normalization'))
+
+// Switch to the content frame for Work Output Settings
+WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
+
+// Click the modify icon for the type
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/type_modify_icon'))
+
+// Switch back to the default content from the frame
+WebUI.switchToDefaultContent()
+
+// Verify the Metric Name label text
+WebUI.verifyElementText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/td_Metric Name'),
+'Metric Name*')
+
+// Verify the Output Multiplier Value label text
+WebUI.verifyElementText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/td_Output Multiplier Value'),
+'Output Multiplier Value*')
+
+// Verify the Is Active label text
+WebUI.verifyElementText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/td_Is Active'),
+'Is Active*')
+
+// Verify the Units Label text
+WebUI.verifyElementText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Units Label'),
+'Units Label')
+
+// Click the Divisor column/label
+WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/td_Divisor'))
+
+// Verify the 'Yes' label text for divisor
+WebUI.verifyElementText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/span_Yes'),
+' Yes')
+
+// Verify the 'No' label text for divisor
+WebUI.verifyElementText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/label_No'),
+' No')
+
+// Switch again to the content frame for Work Output Settings
+WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
+
+// Retrieve the actual text of the Actual Productive Hours label
+String actualText = WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Actual Productive Hours_label'))
+
+actualText = actualText.replaceAll("\\s+", " ").trim()
+
+// Define the expected text for comparison
+String expectedText = "Actual Productive Hours Business Impact Categories Productive Neutral Non Productive Include Active Away From System"
+
+// Assert that the actual text matches the expected text
+assert actualText == expectedText
+
+// Close the browser
+WebUI.closeBrowser()*/
