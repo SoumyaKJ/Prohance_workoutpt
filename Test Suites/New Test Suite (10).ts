@@ -34,21 +34,21 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>c498bf77-3e44-450d-9bc7-69ec5d547a30</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>URL</value>
          <variableId>b1ada1e6-cd8c-4c5d-8b6e-89f930b64063</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>c498bf77-3e44-450d-9bc7-69ec5d547a30</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>USERNAME</value>
          <variableId>7f3c8255-08d8-4175-89e2-0c5091cf902f</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>c498bf77-3e44-450d-9bc7-69ec5d547a30</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PASSWORD</value>
          <variableId>55cb5448-b42b-41f4-92f0-5259b202b60a</variableId>
       </variableLink>
    </testCaseLink>

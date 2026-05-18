@@ -81,13 +81,19 @@ WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance
 WebUI.waitForPageLoad(10)
 
 // Verify the CLEAR button text
-WebUI.verifyElementText(findTestObject('Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/clear_button'), 'CLEAR')
+WebUI.verifyElementText(findTestObject('Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/clear_button'), 
+    'CLEAR')
 
 // Verify the SAVE button text
 WebUI.verifyElementText(findTestObject('Normalization Screen/Page_ProHance Work Output/save button'), 'SAVE')
 
 // Verify the BACK label text
-WebUI.verifyElementText(findTestObject('Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/back_label'), 'BACK')
+WebUI.verifyElementText(findTestObject('Normalization Screen/Page_ProHance Work Output/Page_ProHance Work Output/back_label'), 
+    'BACK')
 
 // Close the browser
 WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
+    FailureHandling.STOP_ON_FAILURE)
+

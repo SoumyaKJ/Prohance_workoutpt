@@ -62,8 +62,6 @@ WebUI.closeBrowser()
 
 
 */
-
-
 // Call the login test case
 WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -97,20 +95,26 @@ WebUI.waitForPageLoad(10)
 // Find the 'Is active' label web element
 def activelabel = WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Is active label'))
 
-def label=activelabel.getText()
+def label = activelabel.getText()
 
-print label
+print(label)
 
 // Find the yes and no radio buttons under Is active
-def isactive=WebUI.findWebElements(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/yes and no radio button'),10)
+def isactive = WebUI.findWebElements(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/yes and no radio button'), 
+    10)
 
 //Verifying that anyone radio button should be selected under isactive label
+def selected = isactive.find({ 
+        it.isSelected()
+    })
 
-def selected = isactive.find { it.isSelected() }
+assert selected != null : '❌ No radio button is selected'
 
-assert selected != null : "❌ No radio button is selected"
-
-println "✅ Selected radio value: " + selected.getAttribute('value')
+println('✅ Selected radio value: ' + selected.getAttribute('value'))
 
 // Close the browser
 WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
+    FailureHandling.STOP_ON_FAILURE)
+

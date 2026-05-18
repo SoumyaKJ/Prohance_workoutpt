@@ -92,28 +92,34 @@ WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance
 WebUI.waitForPageLoad(10)
 
 // Find all checkbox elements for type1_check box
-List<WebElement> checkboxes = WebUI.findWebElements(findTestObject('Normalization Screen/Page_ProHance Work Output/type1_check box'), 10)
+List<WebElement> checkboxes = WebUI.findWebElements(findTestObject('Normalization Screen/Page_ProHance Work Output/type1_check box'), 
+    10)
 
 // Filter the list to only selected checkboxes
-def selectedCheckboxes = checkboxes.findAll { it.isSelected() }
+def selectedCheckboxes = checkboxes.findAll({ 
+        it.isSelected()
+    })
 
 // Assert that at least one checkbox is selected
-assert selectedCheckboxes.size() > 0 : "❌ No checkbox is selected"
+assert selectedCheckboxes.size() > 0 : '❌ No checkbox is selected'
 
 // Iterate over each checkbox and print its selection state and value
-checkboxes.each { cb ->
+checkboxes.each({ def cb ->
+        def value = cb.getAttribute('value')
 
-    def value = cb.getAttribute('value')
+        if (value == 'on') {
+            value = cb.getAttribute('id' // or name, or label text
+                )
+        }
+        
+        println((('check box selected :' + cb.isSelected()) + ' | Value: ') + value)
+    })
 
-    if (value == 'on')
-    {
-        value = cb.getAttribute('id')   // or name, or label text
-    }
-
-    println "check box selected :" + cb.isSelected() + " | Value: " +value
-
-}
-println "Total checkboxes found: "+ checkboxes.size()
+println('Total checkboxes found: ' + checkboxes.size())
 
 // Close the browser
 WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
+    FailureHandling.STOP_ON_FAILURE)
+

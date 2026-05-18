@@ -39,12 +39,16 @@ WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance
 
 WebUI.waitForPageLoad(10)
 
-def breadcrumb=WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/breadcrumb'))
+def breadcrumb = WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/breadcrumb'))
 
-print breadcrumb
+print(breadcrumb)
 
-def Actualtext="Administration Work Output Work Output Normalization Work Output Normalization Details [Type 4] "
+def Actualtext = 'Administration Work Output Work Output Normalization Work Output Normalization Details [Type 4] '
 
-assert breadcrumb==Actualtext
+assert breadcrumb == Actualtext
 
 WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
+    FailureHandling.STOP_ON_FAILURE)
+

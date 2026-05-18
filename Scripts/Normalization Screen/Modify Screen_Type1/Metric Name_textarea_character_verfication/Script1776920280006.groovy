@@ -56,12 +56,13 @@ def maxcharlength = WebUI.getAttribute(findTestObject('Object Repository/Normali
 def maxlength = maxcharlength.toInteger()
 
 def file = new File(RunConfiguration.getProjectDir() + '/Data Files/normalization metric name.xlsx')
-	
+
 def workbook = new XSSFWorkbook(file)
-	
+
 def sheet = workbook.getSheetAt(0)
-	
-WebUI.waitForElementClickable(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/type_modify_icon'), 10)
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/type_modify_icon'), 
+    10)
 
 WebUI.waitForElementVisible(findTestObject('Normalization Screen/Page_ProHance Work Output/metric name field'), 20)
 
@@ -95,3 +96,10 @@ if (index == 0) return
 	})
 	
 WebUI.closeBrowser()
+
+
+WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
+    FailureHandling.STOP_ON_FAILURE)
+

@@ -13,6 +13,6 @@
          <iterationType>ALL</iterationType>
          <value></value>
       </iterationEntity>
-      <testDataId>Data Files/New Test Data</testDataId>
+      <testDataId>Data Files/normalization</testDataId>
    </testDataLinks>
 </TestCaseEntity>

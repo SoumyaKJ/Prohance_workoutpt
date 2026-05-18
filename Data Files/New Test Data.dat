@@ -4,7 +4,7 @@
    <name>New Test Data</name>
    <tag></tag>
    <connectionProperties/>
-   <containsHeaders>true</containsHeaders>
+   <containsHeaders>false</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>aa75baae-5273-4961-a10c-ce09d491a0b4</dataFileGUID>
    <dataSourceUrl>Data Files/normalization metric name.xlsx</dataSourceUrl>

@@ -197,7 +197,8 @@ WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance
 WebUI.waitForPageLoad(10)
 
 // Get the maxlength attribute of the Output Multiplier Value field
-def maxcharlength = WebUI.getAttribute(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'),'maxlength')
+def maxcharlength = WebUI.getAttribute(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 
+    'maxlength')
 
 // Convert maxlength to integer
 def maxlength = maxcharlength.toInteger()
@@ -215,7 +216,8 @@ TestObject btn = findTestObject('Object Repository/Normalization Screen/Page_Pro
 WebUI.waitForElementClickable(btn, 10)
 
 // Set text 'Output Multiplier Value' into the Output Multiplier Value field to verify characters
-WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'),'Output Multiplier Value')
+WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 
+    'Output Multiplier Value')
 
 // Click the save button
 WebUI.click(saveBtn)
@@ -224,22 +226,23 @@ WebUI.click(saveBtn)
 WebUI.waitForAlert(5)
 
 // Find the alert element
-def alert= WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alert'))
+def alert = WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alert'))
 
 // Get the alert message text
-def alertmsg=alert.getText();
+def alertmsg = alert.getText()
 
 // Define the expected validation message
-def expectedtext="Output Multiplier Value should be numeric and shall be greater than 0, accepts up to 2 decimal places."
+def expectedtext = 'Output Multiplier Value should be numeric and shall be greater than 0, accepts up to 2 decimal places.'
 
 // Assert the alert message matches expected
-assert alertmsg==expectedtext
+assert alertmsg == expectedtext
 
 // Click to accept the alert
 WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alertaccept'))
 
 // Set special characters into the Output Multiplier Value field
-WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'),'!@#$%%^^^&*)(**^$$')
+WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 
+    '!@#$%%^^^&*)(**^$$')
 
 // Click the save button
 WebUI.click(saveBtn)
@@ -248,16 +251,17 @@ WebUI.click(saveBtn)
 WebUI.waitForAlert(5)
 
 // Get the alert message text again
-def alertmsg1=alert.getText();
+def alertmsg1 = alert.getText()
 
 // Assert the alert message matches expected
-assert alertmsg==expectedtext
+assert alertmsg == expectedtext
 
 // Click to accept the alert
 WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alertaccept'))
 
 // Set a large integer into the Output Multiplier Value field to verify max value validation
-WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'),'1245123')
+WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 
+    '1245123')
 
 // Click the save button
 WebUI.click(saveBtn)
@@ -266,7 +270,7 @@ WebUI.click(saveBtn)
 def numberalert = WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alert'))
 
 // Wait for the alert element to be visible
-WebUI.waitForElementVisible(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alert'),10)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alert'), 10)
 
 // Delay for 1 second
 WebUI.delay(1)
@@ -275,16 +279,17 @@ WebUI.delay(1)
 def alertmsg3 = numberalert.getText()
 
 // Define the expected message for exceeding max value
-def Expectedmsg ="Output Multiplier Value should not be more than 99999.99"
+def Expectedmsg = 'Output Multiplier Value should not be more than 99999.99'
 
 // Assert the alert message matches expected
-assert alertmsg3==Expectedmsg
+assert alertmsg3 == Expectedmsg
 
 // Click to accept the alert
 WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/alertaccept'))
 
 // Set a valid decimal value into the Output Multiplier Value field
-WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'),'12451.23')
+WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 
+    '12451.23')
 
 // Click the save button
 WebUI.click(saveBtn)
@@ -305,63 +310,68 @@ WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance
 WebUI.waitForPageLoad(10)
 
 // Wait for the Output Multiplier Value field to be visible
-WebUI.waitForElementVisible(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 20)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 
+    20)
 
 // Iterate through each row in the sheet starting from second row
 sheet.iterator().eachWithIndex({ def row, def index ->
+        // Skip header row
+        if (index == 0) {
+        }
+        
+        // Wait for the Output Multiplier Value field to be visible
+        WebUI.waitForElementVisible(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 
+            20)
 
-// Skip header row
-if (index == 0)
-return
+        // Read the cell value and trim
+        def value = row.getCell(0).toString().trim()
 
-// Wait for the Output Multiplier Value field to be visible
-WebUI.waitForElementVisible(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 20)
+        // Convert scientific notation to plain string if needed
+        if (value.contains('E')) {
+            value = new BigDecimal(value).toPlainString()
+        }
+        
+        // Set the value into the Output Multiplier Value field
+        WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 
+            value)
 
-// Read the cell value and trim
-def value = row.getCell(0)?.toString()?.trim()
+        // Print row index
+        println("Row index: $index")
 
-// Convert scientific notation to plain string if needed
-if (value?.contains("E")) {
-value = new BigDecimal(value).toPlainString()
-}
+        // Print cell value
+        println("Cell value: $row.getCell(0)")
 
-// Set the value into the Output Multiplier Value field
-WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'),value)
+        // Get the entered text from the field
+        def entertext = WebUI.getAttribute(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'), 
+            'value')
 
-// Print row index
-println "Row index: $index"
+        // Print the entered text
+        println('Entered text: ' + entertext)
 
-// Print cell value
-println "Cell value: ${row.getCell(0)}"
+        // Get the length of entered text
+        def maxchar = entertext.length()
 
-// Get the entered text from the field
-def entertext = WebUI.getAttribute(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Output Multiplier Value_field'),"value")
+        // Assert the entered text length equals maxlength
+        assert maxchar == maxlength
 
-// Print the entered text
-println "Entered text: " + entertext
+        // Print maximum length message
+        print('maximum length is 8\n')
 
-// Get the length of entered text
-def maxchar= entertext.length()
+        // Click the save button
+        WebUI.click(saveBtn)
 
-// Assert the entered text length equals maxlength
-assert maxchar == maxlength
+        // Get the success message text
+        def successmsg = WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/save_sucessfull message'))
 
-// Print maximum length message
-print "maximum length is 8\n"
+        // Print the success message
+        print(successmsg)
 
-// Click the save button
-WebUI.click(saveBtn)
+        // Click the modify icon button stored in btn
+        WebUI.click(btn)
+    })
 
-// Get the success message text
-def successmsg=WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/save_sucessfull message'))
-
-// Print the success message
-print successmsg
-
-// Click the modify icon button stored in btn
-WebUI.click(btn)
-})
-	
 WebUI.closeBrowser()
 
+WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
+    FailureHandling.STOP_ON_FAILURE)
 

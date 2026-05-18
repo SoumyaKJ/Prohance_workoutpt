@@ -1,11 +1,21 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import org.openqa.selenium.Dimension
-
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.Dimension as Dimension
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import internal.GlobalVariable as GlobalVariable
 
 /*WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -37,7 +47,6 @@ assert breadcrumb==Actualtext
 
 WebUI.closeBrowser()
 */
-
 // Call the applogin test case
 WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -67,13 +76,17 @@ WebUI.click(findTestObject('Object Repository/Normalization Screen/Page_ProHance
 // Wait for the page to load
 WebUI.waitForPageLoad(10)
 
-def breadcrumb=WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/breadcrumb'))
+def breadcrumb = WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/breadcrumb'))
 
-print breadcrumb
+print(breadcrumb)
 
-def Actualtext="Administration Work Output Work Output Normalization Work Output Normalization Details [Type 1] "
+def Actualtext = 'Administration Work Output Work Output Normalization Work Output Normalization Details [Type 1] '
 
-assert breadcrumb==Actualtext
+assert breadcrumb == Actualtext
 
 // Close the browser
 WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
+    FailureHandling.STOP_ON_FAILURE)
+

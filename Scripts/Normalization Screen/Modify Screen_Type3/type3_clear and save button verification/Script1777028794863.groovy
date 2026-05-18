@@ -49,3 +49,6 @@ WebUI.verifyElementText(findTestObject('Normalization Screen/Page_ProHance Work 
 
 WebUI.closeBrowser()
 
+WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
+    FailureHandling.STOP_ON_FAILURE)
+
