@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rating scale link</name>
+   <name>user attribute with text box field</name>
    <tag></tag>
-   <elementGuidId>8e06bec3-2a48-406e-b5b4-7daec23c9b6e</elementGuidId>
+   <elementGuidId>34f4400b-bfed-43c0-8ed3-839594aeb9dc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;level2_107&quot;]/li[4]</value>
+         <value>//table[@id=&quot;CommonDataTableId&quot;]/tbody/tr/td[4]/div</value>
       </entry>
       <entry>
          <key>BASIC</key>

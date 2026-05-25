@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rating scale link</name>
+   <name>fetch</name>
    <tag></tag>
-   <elementGuidId>8e06bec3-2a48-406e-b5b4-7daec23c9b6e</elementGuidId>
+   <elementGuidId>9f7d56d3-af6b-4f84-9357-408e5287a888</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;level2_107&quot;]/li[4]</value>
+         <value>//input[@id=&quot;saveDynColumns&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

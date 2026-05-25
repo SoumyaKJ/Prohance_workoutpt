@@ -41,7 +41,7 @@ attribute.each{println(it)}
 
 //println(attribute)
 
-def wtuseratributelist=WebUI.callTestCase(findTestCase('WT_users/WT_user attribute list'), [:], FailureHandling.STOP_ON_FAILURE)
+def wtuseratributelist=WebUI.callTestCase(findTestCase('WT_users/WT_Active user attribute list'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //print wtuseratributelist
 

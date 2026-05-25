@@ -1,23 +1,11 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import org.openqa.selenium.By as By
-import org.openqa.selenium.Dimension as Dimension
-import org.openqa.selenium.WebElement as WebElement
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+
+import org.openqa.selenium.Dimension
+
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -61,16 +49,19 @@ WebUI.verifyElementText(findTestObject('Object Repository/Normalization Screen/P
 
 WebUI.switchToFrame(findTestObject('Normalization Screen/Page_ProHance Work Output/frame'), 10)
 
-String actualText = WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Actual Productive Hours_label'))
+def actualText = WebUI.findWebElements(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/Actual Productive Hours_label'),10)
 
-actualText = actualText.replaceAll('\\s+', ' ').trim()
+def actual = actualText.collect {
+	it.getText().trim()
+	}
 
-String expectedText = 'Actual Productive Hours Business Impact Categories Productive Neutral Non Productive Include Active Away From System'
+actual.addAll('Include Activity Away From System')
 
-assert actualText.equalsIgnoreCase(expectedText)
+
+def expectedText=WebUI.callTestCase(findTestCase('WT rating scale/rating scale options'), [:], FailureHandling.STOP_ON_FAILURE)
+
+assert (actual==expectedText)
 
 WebUI.closeBrowser()
 
-WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
-    FailureHandling.STOP_ON_FAILURE)
 

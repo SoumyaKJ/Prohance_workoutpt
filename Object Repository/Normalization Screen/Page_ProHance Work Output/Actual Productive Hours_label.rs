@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table/tbody/tr[2]/td[2][contains(normalize-space(),'Actual Productive Hours')]&#xd;
+         <value>//table/tbody/tr[2]/td[2]/div/span&#xd;
 &#xd;
 </value>
       </entry>

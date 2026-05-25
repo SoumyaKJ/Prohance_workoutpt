@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>default user attribute verification with wo setting screen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5d7f47b0-0fc4-4527-8688-0fa70c8ef163</testCaseGuid>
+</TestCaseEntity>

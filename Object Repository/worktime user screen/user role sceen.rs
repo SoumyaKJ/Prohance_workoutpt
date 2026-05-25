@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rating scale link</name>
+   <name>user role sceen</name>
    <tag></tag>
-   <elementGuidId>8e06bec3-2a48-406e-b5b4-7daec23c9b6e</elementGuidId>
+   <elementGuidId>27035dfa-8bec-4817-9d3a-d02fea3987bc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;level2_107&quot;]/li[4]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;level2_163&quot;]/li[4]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

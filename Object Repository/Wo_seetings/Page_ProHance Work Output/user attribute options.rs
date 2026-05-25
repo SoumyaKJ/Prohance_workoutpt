@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id=&quot;workTypeEstimatedHrs&quot;]/option</value>
+         <value>//select[@id=&quot;workTypeEstimatedHrs&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

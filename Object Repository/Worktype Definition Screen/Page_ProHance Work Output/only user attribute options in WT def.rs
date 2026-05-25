@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rating scale link</name>
+   <name>only user attribute options in WT def</name>
    <tag></tag>
-   <elementGuidId>8e06bec3-2a48-406e-b5b4-7daec23c9b6e</elementGuidId>
+   <elementGuidId>ca1c29cb-b775-4b0e-9b1b-f9d8a3da28cd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;level2_107&quot;]/li[4]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//table[@id='userAttributeTableTable']//table[@id='dataTable']/tbody/tr/td[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

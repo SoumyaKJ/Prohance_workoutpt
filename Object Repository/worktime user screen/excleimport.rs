@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rating scale link</name>
+   <name>excleimport</name>
    <tag></tag>
-   <elementGuidId>8e06bec3-2a48-406e-b5b4-7daec23c9b6e</elementGuidId>
+   <elementGuidId>aa82f7de-0578-4930-b80c-a39804c7b91b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;level2_107&quot;]/li[4]</value>
+         <value>//div[@id=&quot;CommonDataTableId_wrapper&quot;]/div[1]/span[3]/span/img</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

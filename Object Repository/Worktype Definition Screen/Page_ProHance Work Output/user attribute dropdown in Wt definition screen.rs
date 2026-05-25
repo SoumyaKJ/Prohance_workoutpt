@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rating scale link</name>
+   <name>user attribute dropdown in Wt definition screen</name>
    <tag></tag>
-   <elementGuidId>8e06bec3-2a48-406e-b5b4-7daec23c9b6e</elementGuidId>
+   <elementGuidId>5fcc2231-5349-47cb-b726-1593f15269dc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;level2_107&quot;]/li[4]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//select[@id=&quot;ehtLocalRuleOption&quot;]/option</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

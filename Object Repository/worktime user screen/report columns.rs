@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rating scale link</name>
+   <name>report columns</name>
    <tag></tag>
-   <elementGuidId>8e06bec3-2a48-406e-b5b4-7daec23c9b6e</elementGuidId>
+   <elementGuidId>3e212a68-1929-41c0-8cf0-01a90ac261f0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;level2_107&quot;]/li[4]</value>
+         <value>//label[@id=&quot;showDynColDialog&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

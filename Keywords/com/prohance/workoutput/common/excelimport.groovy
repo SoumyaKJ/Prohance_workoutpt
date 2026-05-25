@@ -1,31 +1,21 @@
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+package com.prohance.workoutput.common
 
-import org.apache.poi.ss.usermodel.Cell
-import org.apache.poi.ss.usermodel.Row
-import org.apache.poi.ss.usermodel.Sheet
-import org.apache.poi.ss.usermodel.Workbook
-import org.apache.poi.ss.usermodel.WorkbookFactory
-import org.apache.poi.openxml4j.util.ZipSecureFile
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.util.KeywordUtil
 
+import java.io.File
+import java.io.FileInputStream
 
-WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+import org.apache.poi.ss.usermodel.*
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+import org.apache.poi.hssf.usermodel.HSSFWorkbook
 
-WebUI.waitForElementPresent(findTestObject('Work time category/side bar_admin'), 10)
+public class excelimport {
 
-WebUI.click(findTestObject('Work time category/side bar_admin'))
+    @Keyword
+    def readExcelFromDownloads() {
 
-WebUI.click(findTestObject('Object Repository/worktime user screen/users link'))
-
-WebUI.click(findTestObject('Object Repository/worktime user screen/users'))
-
-WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/iframe'), 10)
-
-WebUI.click(findTestObject('Object Repository/worktime user screen/excleimport'))
-
-String downloadDir = System.getProperty("user.home") + "\\Downloads"
+        String downloadDir = System.getProperty("user.home") + "\\Downloads"
 File folder = new File(downloadDir)
 assert folder.exists() : "Downloads folder does not exist: ${downloadDir}" 
 
@@ -80,12 +70,4 @@ try {
 } finally {
     if (workbook != null) workbook.close()
 }
-
-WebUI.closeBrowser()
-
-	
-
-	   
-	   
-	   
-	   
+}}

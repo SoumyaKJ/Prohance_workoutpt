@@ -25,6 +25,8 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.Dimension as Dimension
 import java.text.SimpleDateFormat as SimpleDateFormat
 
+//need to run in URL :10.10.10.31:3434 [calling and called instance should be same]
+
 WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
@@ -70,5 +72,18 @@ def date = orgstartdate.collect({
         it.getAttribute('value').trim()
     })
 
-print(date)
+boolean allSame = date.unique().size() == 1
 
+if (allSame) {
+    println("All elements have the same value $date[0]")
+} else {
+    println("Values are different")
+}
+
+println(date[0])
+
+def orginstalldate=WebUI.callTestCase(findTestCase('superadmin screen/super admin org name'), [:], FailureHandling.STOP_ON_FAILURE)
+
+assert(date[0]==orginstalldate)
+
+WebUI.closeBrowser()
