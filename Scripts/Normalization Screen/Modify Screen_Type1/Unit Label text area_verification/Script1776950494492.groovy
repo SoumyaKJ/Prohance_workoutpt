@@ -164,50 +164,36 @@ WebUI.waitForElementVisible(findTestObject('Normalization Screen/Page_ProHance W
 
 // Iterate through each row in the sheet skipping the header row
 sheet.iterator().eachWithIndex({ def row, def index ->
-        if (index == 0) {
-        }
+	
+if (index == 0) 
         
-        // Set the unit text field with the value from the first cell of the current row
-        WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/unit text field'), 
-            row.getCell(0).stringCellValue)
-
-        // Print the current row index to the console
-        println("Row index: $index")
-
-        // Print the current cell value to the console
-        println("Cell value: $row.getCell(0)")
-
-        // Retrieve the entered text from the unit text field
-        def entertext = WebUI.getAttribute(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/unit text field'), 
-            'value')
-
-        // Print the entered text to the console
-        println('Entered text: ' + entertext)
-
-        // Calculate length of the entered text
-        def maxchar = entertext.length()
-
-        // Assert that the entered text length equals the maxlength attribute
-        assert maxchar == maxlength
-
-        // Print a message indicating the maximum length validation
-        print('maximum length is 20\n')
-
-        // Click the save button to persist changes
-        WebUI.click(saveBtn)
-
-        // Retrieve and print the success message after save
-        def successmsg = WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/save_sucessfull message'))
-
-        print(successmsg)
-
-        // Click the modify icon again to prepare for next iteration
-        WebUI.click(btn)
-    })
-
-// Close the browser once processing is complete
+	 return
+		 
+        WebUI.setText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/unit text field'),row.getCell(0).stringCellValue)
+		
+		println "Row index: $index"
+		
+		println "Cell value: ${row.getCell(0)}"
+		
+		def entertext = WebUI.getAttribute( findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/unit text field'),"value")
+		
+		println "Entered text: " + entertext
+		
+		def maxchar= entertext.length()
+		
+		assert maxchar == maxlength
+		
+		print "maximum length is 20\n"
+		
+		WebUI.click(saveBtn)
+		
+		def successmsg=WebUI.getText(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/save_sucessfull message'))
+		
+		print successmsg
+		
+		WebUI.click(btn)
+	})
+	
 WebUI.closeBrowser()
 
-WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
-    FailureHandling.STOP_ON_FAILURE)
 

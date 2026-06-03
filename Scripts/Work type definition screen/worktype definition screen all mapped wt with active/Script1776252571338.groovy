@@ -34,17 +34,19 @@ WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_O
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
 
-//WebUI.waitForElementVisible(findTestObject('Worktype Definition Screen/Page_ProHance/a_WORK OUTPUT'), 20)
+WebUI.waitForElementVisible(findTestObject('Worktype Definition Screen/Page_ProHance/WORK OUTPUT'), 20)
 
-//WebUI.waitForElementClickable(findTestObject('Worktype Definition Screen/Page_ProHance/a_WORK OUTPUT'), 20)
+WebUI.waitForElementClickable(findTestObject('Worktype Definition Screen/Page_ProHance/WORK OUTPUT'), 20)
 
-WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/a_WORK OUTPUT'))
+WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/WORK OUTPUT'))
 
 WebUI.switchToWindowTitle('ProHance Work Output')
 
+//WebUI.click(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/wo refresh screen'))
+
 WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/div_SIDEBAR MENU'))
 
-WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/a_Administration'))
+WebUI.click(findTestObject('Object Repository/Category/Page_ProHance Work Output/span_Administration'))
 
 WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/li_Work Type Definition'))
 

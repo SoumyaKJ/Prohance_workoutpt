@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>collecting all active WT with only default EHT</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c7dc10c2-b622-4686-8ebb-1ffa1fa26f1a</testCaseGuid>
+</TestCaseEntity>

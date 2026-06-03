@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id=&quot;CommonDataTableId&quot;]/tbody/tr[4]/td[2]/span[text()='ProHance Technology']</value>
+         <value>//table[@id=&quot;CommonDataTableId&quot;]/tbody/tr/td[2]/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

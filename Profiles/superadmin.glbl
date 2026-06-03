@@ -6,7 +6,7 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://10.10.10.31:3434/prohance'</initValue>
+      <initValue>'https://13.126.98.191:9443/prohance'</initValue>
       <name>URL</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
@@ -20,7 +20,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'superadmin@1'</initValue>
+      <initValue>'1'</initValue>
       <name>PASSWORD</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

@@ -1,15 +1,15 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import org.openqa.selenium.Dimension
+
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.keyword.builtin.SwitchToFrameKeyword
-
-import org.openqa.selenium.WebElement
-
-WebUI.switchToDefaultContent()
 
 WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
 
 WebUI.waitForElementPresent(findTestObject('Work time category/side bar_admin'),10)
 
@@ -19,7 +19,7 @@ WebUI.click(findTestObject('Work time category/side bar_admin'))
 
 WebUI.click(findTestObject('Object Repository/work time/rating scale link'))
 
-WebUI.switchToFrame(findTestObject('Wo_seetings/Page_ProHance Work Output/iframe_contentFrame'), 10)
+WebUI.switchToFrame(findTestObject('Wo_settings/Page_ProHance Work Output/iframe_contentFrame'), 10)
 
 WebUI.click(findTestObject('Object Repository/work time/business impact label'))
 

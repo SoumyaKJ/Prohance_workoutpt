@@ -40,7 +40,7 @@ println(numberofpage)
 
 def Data = []
 
-if (numberofpage > 3) {
+if (numberofpage >= 3) {
 	
     for (int i = 1; i <= numberofpage; i++) 
 		{

@@ -9,11 +9,14 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.builtin.SwitchToDefaultContentKeyword
 
 
 WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+
+//WebUI.switchToDefaultContent()
 
 //WebUI.click(findTestObject('Object Repository/Work time category/refresh button_prohance'))
 WebUI.waitForElementPresent(findTestObject('Work time category/side bar_admin'), 10)
@@ -83,13 +86,14 @@ for (int i = 0; i <rows.size(); i++)
 	   List<String> optionTexts = option.collect {
 		   it.getText()?.trim()
 		   }
+		   dropdownMap[userattribute] = optionTexts
 		   
 		   WebUI.click(findTestObject('Object Repository/worktime user screen/back button'))
 		  
 		   //println "User Attribute: ${userattribute}"
 		    //println  "Dropdown Options: ${optionTexts}"
 		  
-		   dropdownMap[userattribute] = optionTexts
+		  
 		   
 				}
 		   
@@ -106,6 +110,6 @@ for (int i = 0; i <rows.size(); i++)
 	
 	}
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 
 return dropdownMap

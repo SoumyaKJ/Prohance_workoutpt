@@ -6,12 +6,11 @@
    <elementGuidId>977f6de8-17ec-40d6-b460-79e66a3b4ae3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='workTypeCategoryFilterId']/option[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;categorySpecific&quot;]/option[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -16,23 +16,23 @@ public class excelimport {
     def readExcelFromDownloads() {
 
         String downloadDir = System.getProperty("user.home") + "\\Downloads"
-File folder = new File(downloadDir)
-assert folder.exists() : "Downloads folder does not exist: ${downloadDir}" 
+		File folder = new File(downloadDir)
+		assert folder.exists() : "Downloads folder does not exist: ${downloadDir}" 
 
-File[] all = folder.listFiles()
-assert all != null : "Cannot read files in folder: ${downloadDir}" 
+		File[] all = folder.listFiles()
+		assert all != null : "Cannot read files in folder: ${downloadDir}" 
 
 // Pick latest real .xlsx (ignore temp/in-progress downloads)
-File file = all.findAll { f ->
+		File file = all.findAll { f ->
     f.isFile() &&
     f.name.startsWith('Users') &&
     f.name.toLowerCase().endsWith('.xlsx') &&
     !new File(f.absolutePath + '.crdownload').exists() &&
     !f.name.toLowerCase().endsWith('.tmp')
 }.sort { a, b -> b.lastModified() <=> a.lastModified() }
- .find { it != null }
+ 			.find { it != null }
 
-assert file != null : "Excel file not found!"
+			 assert file != null : "Excel file not found!"
 println("Selected file: ${file.absolutePath} (size=${file.length()} bytes)")
 
 // Wait until file size stabilizes (download completed)

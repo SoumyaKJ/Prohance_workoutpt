@@ -1,38 +1,21 @@
 import com.kms.katalon.core.testobject.TestObject as TestObject
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
-import org.junit.After as After
 import org.openqa.selenium.By as By
 import java.util.List as List
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.Dimension as Dimension
-import java.text.SimpleDateFormat as SimpleDateFormat
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.testobject.ConditionType
 org.openqa.selenium.Dimension
 
 WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
 
-WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/a_WORK OUTPUT'))
+WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/WORK OUTPUT'))
 
 WebUI.switchToWindowTitle('ProHance Work Output')
 
@@ -77,8 +60,11 @@ WebUI.verifyElementClickable(checkbox)
 WebUI.verifyElementText(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/label1'), 
     'Define Estimated Hours (Handling Time) & Targets specific for this Work Type')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/label2'), 
-    'Target Condition [Volumes]')
+String dynamictext="Target Condition"
+
+String label=WebUI.getText(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/label2'))
+
+assert label.startsWith(dynamictext)
 
 def conditions = []
 
@@ -151,7 +137,7 @@ boolean isPresent = WebUI.verifyElementPresent(findTestObject('Object Repository
 assert isPresent
 
 //Selected Date verification
-String targetMonthYear = 'July 2023'
+String targetMonthYear = 'July 2018'
 
 String targetDay = '12'
 

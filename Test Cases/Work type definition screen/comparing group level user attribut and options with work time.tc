@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>comparing group level user attribut and options with work time</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>997e7403-283a-4125-b6b7-f759042f46a6</testCaseGuid>
+</TestCaseEntity>

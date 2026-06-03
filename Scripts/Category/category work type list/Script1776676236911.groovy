@@ -12,7 +12,7 @@ WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_O
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
 
-WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/a_WORK OUTPUT'))
+WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/WORK OUTPUT'))
 
 WebUI.switchToWindowTitle('ProHance Work Output')
 
@@ -74,8 +74,7 @@ for (int k = 1; k <=numberofpage; k++)
 		  for (int j = 1; j <= rows.size(); j++)
 				 
 				   {
-		               print("$j\n")
-					   
+		              
 					   print(rows.size())
 					   
 					   TestObject obj1 = new TestObject()
@@ -132,6 +131,10 @@ for (int k = 1; k <=numberofpage; k++)
 			   }
 		 
  map.each{println it}
+ 
+ //WebUI.switchToDefaultContent()
+ 
+ //WebUI.click(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/wo refresh screen'))
    
 WebUI.closeBrowser()
 

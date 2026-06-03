@@ -1,37 +1,20 @@
 import com.kms.katalon.core.testobject.TestObject as TestObject
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
-import org.junit.After as After
-import org.openqa.selenium.By as By
-import java.util.List as List
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.Dimension as Dimension
-import java.text.SimpleDateFormat as SimpleDateFormat
 
-//need to run in URL :10.10.10.31:3434 [calling and called instance should be same]
+//user has to pass the org name
 
-WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_ON_FAILURE)
+def orginstalldate=CustomKeywords.'com.prohance.workoutput.common.Superadminscreens.superadmin'()
 
-DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+//----------------------------------------------------
+//WebUI.waitForPageLoad(30) // adding waiting time for headlesss mode
 
-WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/a_WORK OUTPUT'))
+WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/wo link'))
 
 WebUI.switchToWindowTitle('ProHance Work Output')
 
@@ -41,20 +24,20 @@ WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance Work Output
 
 WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/li_Work Type Definition'))
 
-WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/iframe'), 10)
+WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/iframe'),10)
 
 WebUI.click(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/add new link'))
 
-WebUI.setText(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/name text area'), 'new work type')
+WebUI.setText(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/name text area'), 'new work type2')
 
 WebUI.click(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/save button'))
 
 WebUI.click(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/back button'))
 
 WebUI.setText(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/search text area'), 
-    'new work type')
+    'new work type2')
 
-String workType = 'new work type'
+String workType = 'new work type2'
 
 WebUI.waitForPageLoad(30)
 
@@ -78,12 +61,13 @@ if (allSame) {
     println("All elements have the same value $date[0]")
 } else {
     println("Values are different")
+	println date
 }
 
 println(date[0])
 
-def orginstalldate=WebUI.callTestCase(findTestCase('superadmin screen/super admin org name'), [:], FailureHandling.STOP_ON_FAILURE)
+assert(date[0]== orginstalldate)
 
-assert(date[0]==orginstalldate)
+print " Work types effective date matching with superdmin screen org installation date"
 
 WebUI.closeBrowser()

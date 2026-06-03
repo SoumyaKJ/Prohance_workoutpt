@@ -23,30 +23,45 @@ WebUI.callTestCase(findTestCase('Commons/superadmin login'), [:], FailureHandlin
 
 WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/iframe'), 10)
 
-def orgname=WebUI.getText(findTestObject('Object Repository/work time/orgname_in_superadmin screen'))
+def organizationname = WebUI.findWebElements(findTestObject('Object Repository/work time/orgname_in_superadmin screen'),10)
 
-def rows=WebUI.findWebElements(findTestObject('Object Repository/work time/installation date column'),10)
+def rows = WebUI.findWebElements(findTestObject('Object Repository/work time/installation date column'),10)
 
-def orginstalldate
+def orginstalldate = ""
 
-for (int j = 1; j <=rows.size(); j++)
-{
-	if(orgname == "ProHance Technology")
-	{
+def currentorg
 
+for (int j = 0; j < rows.size(); j++) {
+
+    String orgname = organizationname[j].getText().trim()
+
+    if (orgname.equalsIgnoreCase("JAMOCHA TECH")) {
+
+        TestObject obj = new TestObject()
+
+        obj.addProperty(
+                "xpath",
+                ConditionType.EQUALS,
+                "//table[@id='CommonDataTableId']/tbody/tr[${j + 1}]/td[2]")
+		//*[@id="CommonDataTableId"]/tbody/tr[2]/td[2]/span
+
+        orginstalldate = WebUI.getText(obj).trim()
 		
-		TestObject obj = new TestObject()
+		currentorg = new TestObject()
+
+        currentorg.addProperty(
+                "xpath",
+                ConditionType.EQUALS,
+                "//table[@id='CommonDataTableId']/tbody/tr[${j + 1}]/td[2]/span")
+
+        println "${orgname} -> ${orginstalldate}"
 		
-		obj.addProperty("xpath", ConditionType.EQUALS, "//table[@id='CommonDataTableId']/tbody/tr[${j}]/td[6]")
-	   
-		 orginstalldate = WebUI.getText(obj).trim()	
 		
-		
-	}
+
+        break
+    }
+
 }
+WebUI.click(currentorg)
 
-println "$orgname -> $orginstalldate"
-
-WebUI.closeBrowser()
-
-return orginstalldate
+//WebUI.closeBrowser()

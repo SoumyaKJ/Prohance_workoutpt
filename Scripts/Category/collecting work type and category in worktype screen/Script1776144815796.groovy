@@ -38,10 +38,10 @@ WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/span_Adm
 
 WebUI.click(findTestObject('Object Repository/Page_ProHance Work Output/li_Work Type Definition'))
 
-WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/iframe'), 0)
+WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/iframe'), 10)
 
 //WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/max records to display'))
-WebUI.waitForElementVisible(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'), 50)
+WebUI.waitForElementVisible(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/worktypes_rows'), 10)
 
 def headers = WebUI.findWebElements(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/table header'), 
     10).collect({ it.getText().trim() })

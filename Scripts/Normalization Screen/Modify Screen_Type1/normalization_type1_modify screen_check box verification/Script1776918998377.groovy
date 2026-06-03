@@ -120,6 +120,3 @@ println('Total checkboxes found: ' + checkboxes.size())
 // Close the browser
 WebUI.closeBrowser()
 
-WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
-    FailureHandling.STOP_ON_FAILURE)
-

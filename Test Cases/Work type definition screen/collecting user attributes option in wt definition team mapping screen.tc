@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>collecting user attributes option in wt definition team mapping screen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1015fe9c-0bb7-4816-95af-53a76d7d5b7d</testCaseGuid>
+</TestCaseEntity>

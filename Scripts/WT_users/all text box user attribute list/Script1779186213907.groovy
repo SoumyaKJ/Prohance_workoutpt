@@ -72,6 +72,6 @@ attribute.addAll(['Role', 'Designation', 'Tenure Range'])
 
 attribute.each { println(it)}
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 
 return attribute

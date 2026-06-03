@@ -1,14 +1,20 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import org.openqa.selenium.Dimension
+
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
-String url = 'http://10.10.10.31:3434/prohance'
+
+DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
+
+String url = 'https://13.126.98.191:9443/prohance'
 String username = 'superadmin'
-String password = 'superadmin@1'
+String password = '1'
 
 WebUI.navigateToUrl(url)
 

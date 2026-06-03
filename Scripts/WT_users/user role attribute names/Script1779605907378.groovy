@@ -12,6 +12,10 @@ WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_O
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
 
+WebUI.switchToDefaultContent()
+
+WebUI.click(findTestObject('Object Repository/Work time category/refresh button_prohance'))
+
 WebUI.waitForElementPresent(findTestObject('Work time category/side bar_admin'), 10)
 
 WebUI.click(findTestObject('Work time category/side bar_admin'))
@@ -28,11 +32,11 @@ def name=userrolename.collect{it.getText().trim()}
 
 Map<String, List<String>> dropdownMap = [:]
 
-dropdownMap["User Role"] = name
+dropdownMap['User Role'] = name
 
 println dropdownMap
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 
 return dropdownMap
 

@@ -15,7 +15,9 @@ WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_O
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920,1080))
 
-WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/a_WORK OUTPUT'))
+//WebUI.click(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/wo refresh screen'))
+
+WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/WORK OUTPUT'))
 
 WebUI.switchToWindowTitle('ProHance Work Output')
 

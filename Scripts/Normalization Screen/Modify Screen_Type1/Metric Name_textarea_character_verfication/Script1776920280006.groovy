@@ -94,12 +94,6 @@ if (index == 0) return
 		
 		WebUI.click(btn)
 	})
-	
-WebUI.closeBrowser()
-
 
 WebUI.closeBrowser()
-
-WebUI.callTestCase(findTestCase('Commons/wologin'), [('url') : 'URL', ('username') : 'USERNAME', ('password') : 'PASSWORD'], 
-    FailureHandling.STOP_ON_FAILURE)
 

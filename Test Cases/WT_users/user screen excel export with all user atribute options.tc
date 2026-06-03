@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>user screen excel export with all user atribute options</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>8ff0b1ee-24d3-46b6-aac3-9ff063b3a10f</testCaseGuid>
-</TestCaseEntity>

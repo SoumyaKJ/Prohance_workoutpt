@@ -110,7 +110,7 @@ WebUI.setText(findTestObject('Normalization Screen/Page_ProHance Work Output/Out
 WebUI.click(findTestObject('Normalization Screen/Page_ProHance Work Output/save button'))
 
 //sucessful message verification
-def Expected3 ="Work Output Normalization: type1 modified successfully"
+def Expected3 ="Work Output Normalization: type4 modified successfully"
 
 def actualmsg=WebUI.findWebElement(findTestObject('Object Repository/Normalization Screen/Page_ProHance Work Output/save_sucessfull message'))
 

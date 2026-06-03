@@ -5,51 +5,45 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>0</numberOfRerun>
+   <numberOfRerun>3</numberOfRerun>
    <pageLoadTimeout>10</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>928b8058-8513-40ac-b73b-144a9b5de6c9</testSuiteGuid>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>b4846c67-068a-40ff-acb1-77b0dff22804</testSuiteGuid>
    <testCaseLink>
-      <guid>7e36947a-37f8-485c-b170-07f955662870</guid>
+      <guid>173f60fe-541b-4f6f-b3d8-56bac090e823</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Commons/wologin</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>0929bfa0-61a7-4f54-bc69-7c476b4e6e34</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/login</testDataId>
-      </testDataLink>
+      <testCaseId>Test Cases/Work type definition screen/comparing group level user attribut and options with work time</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b1ada1e6-cd8c-4c5d-8b6e-89f930b64063</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>7f3c8255-08d8-4175-89e2-0c5091cf902f</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>55cb5448-b42b-41f4-92f0-5259b202b60a</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>d97475f3-3741-4f43-bf3b-2ea718b21e7b</guid>
+      <guid>8041d93b-8a49-4074-9eed-287b1f1e82d0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Category/work type verification in category screen</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+      <testCaseId>Test Cases/Work type definition screen/comparing user attribute and options with WT definition screen</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e1fe7e2f-b230-4761-8ee5-ffe08efbe538</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Work type definition screen/collecting user attributes option in wt definition team mapping screen</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0540eeed-d145-47d5-848e-6f1be884e8d3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Category/category work type list</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>daeac206-4e74-4f67-a404-6c5d8fa17917</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Category/catagory screen worktype mapping comparison with work type screen</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

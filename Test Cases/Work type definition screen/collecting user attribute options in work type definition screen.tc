@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>collecting user attribute options in work type definition screen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7beb479b-cae5-4b63-be0f-8e5a9ec2328d</testCaseGuid>
+</TestCaseEntity>

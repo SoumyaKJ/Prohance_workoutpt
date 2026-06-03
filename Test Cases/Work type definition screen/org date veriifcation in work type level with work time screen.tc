@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>org date veriifcation in work type level with work time screen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d68b895a-e7d1-4f2a-bead-5d400d7a24ed</testCaseGuid>
+</TestCaseEntity>

@@ -24,7 +24,7 @@ WebUI.callTestCase(findTestCase('Commons/applogin'), [:], FailureHandling.STOP_O
 
 DriverFactory.getWebDriver().manage().window().setSize(new Dimension(1920, 1080))
 
-WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/a_WORK OUTPUT'))
+WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance/WORK OUTPUT'))
 
 WebUI.switchToWindowTitle('ProHance Work Output')
 
@@ -62,11 +62,12 @@ boolean isChecked =WebUI.verifyElementNotChecked(findTestObject('Object Reposito
     10, FailureHandling.STOP_ON_FAILURE)
 
 if (isChecked) {
+	println("Checkbox is not checked")
+	
+} else {
 	println("Checkbox is checked")
 	
 	WebUI.click(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/check box1'))
-} else {
-	println("Checkbox is NOT checked")
 }
 
 def userattributename = WebUI.getText(findTestObject('Object Repository/Worktype Definition Screen/Page_ProHance Work Output/selected user attribute_in wt definition screen'))
@@ -77,11 +78,11 @@ WebUI.switchToDefaultContent()
 
 WebUI.click(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/div_SIDEBAR MENU'))
 
-WebUI.click(findTestObject('Wo_seetings/Page_ProHance Work Output/li_Work Output Settings'))
+WebUI.click(findTestObject('Wo_settings/Page_ProHance Work Output/li_Work Output Settings'))
 
 WebUI.switchToFrame(findTestObject('Worktype Definition Screen/Page_ProHance Work Output/iframe'), 10)
 
-WebElement dropdown = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Wo_seetings/Page_ProHance Work Output/user attribute options'), 
+WebElement dropdown = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Wo_settings/Page_ProHance Work Output/user attribute options'), 
     10)
 
 Select select = new Select(dropdown)
